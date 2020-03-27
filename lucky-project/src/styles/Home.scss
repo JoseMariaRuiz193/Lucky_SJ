@@ -1,0 +1,80 @@
+@import "../App.scss";
+
+// Hoja de estilos de Home
+.title-container {
+  width: 100vw;
+  height: 13.5vh;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 8.7%;
+  
+}
+.helloName {
+  padding: 0px;
+  font-size: 2.5rem;
+  color: $ocean;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 6.5vw;
+}
+
+// Clases de Carrusel
+.slide-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 2%;
+}
+.slide-animal{
+  -webkit-box-shadow: 0px 4px 9px 2px rgba(1,116,142,0.7); 
+  box-shadow: 0px 4px 9px 2px rgba(1,116,142,0.7);
+  width: 73%;
+  border-radius: 5pt;
+}
+
+// Clases de Noticias
+.notices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 20%;
+  height: 73%;
+  border-top: 1px solid $cloudyBlue;
+}
+.novedades{
+    width: 88%;
+    text-align: left;
+    font-size: 1.6rem;
+    color: $ocean;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.single-notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  height: 28%;
+  border: 2px solid $lightSalmon;
+  background-color: $lightSalmon;
+  border-radius: 7px;
+  margin-bottom: 10%;
+}
+.notice-image {
+  margin-top: 1%;
+  width: 98%;
+  border-radius: 7px 7px 0px 0px;
+}
+.text-notice {
+  height: 2%;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+}
+
