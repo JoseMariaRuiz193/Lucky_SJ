@@ -1,0 +1,41 @@
+// Colores
+
+$ice: #f1fffa;
+$tiffanyBlue: #6af7dd;
+$cloudyBlue: #bdd2d6;
+$ocean: #01748e;
+$pineGreen: #0e363d;
+$black: #2d2d2d;
+$white: #d8d8d8;
+$lightSalmon: #fa9c93;
+
+
+// Estilos App General
+/* 
+Calculamos el porcentaje de ancho de nuestro componente:
+Dividimos el ancho del componente entre el de nuestra app (375)
+y multiplicamos por 100, y tendremos nuestro VW
+*/
+
+html{
+  font-size: 10px;
+}
+.App{
+  box-sizing: border-box;
+  height: 667px;
+  width: 375px;
+  padding: 0px;
+  margin: 0px;
+  font-family:  'Barlow', sans-serif;
+}
+.content{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+/* Medidas Otros móviles */

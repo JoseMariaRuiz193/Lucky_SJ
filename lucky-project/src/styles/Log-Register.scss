@@ -1,0 +1,180 @@
+@import "../App.scss";
+
+// Hojas de estilo página Register
+.logo-container{
+  margin-top: 7.5vh;
+  width: 43.7vw;
+}
+.logo-lucky {
+  width: 43.7vw;
+}
+.logo-lucky img{
+  width: 43.7vw;
+}
+.title-form {
+  width: 81.3vw;
+  font-size: 2rem;
+  font-weight: 500;
+  color: $ocean;
+  margin-top: 16.7%;
+  text-align: center;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4.6vh;
+  margin-bottom: 10.8%;
+  width: 100vw;
+}
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84.2vw;
+  margin-bottom: 3.5%;
+}
+.profile-img{
+  width: 19vw;
+  height: 19%;
+  border: 2px solid $ocean;
+  background-color: rgb(211, 211, 211);
+  border-radius: 50%;
+}
+.input-container {
+  display: flex;
+  flex-direction: row;
+  width: 84.2vw;
+  border-bottom: 1px solid $cloudyBlue;
+  margin-top: 6%;
+}
+.data-form {
+  width: 77.9vw;
+}
+.image{
+  width: 6.4vw;
+  padding: 2vw;
+}
+.check{
+    width: 4vw;
+}
+.forget-pass {
+  display: inline;
+  align-self: flex-end;
+  height: auto;
+  font-size: 1.2rem;
+  color: $pineGreen;
+  text-align: right;
+  text-decoration: none;
+  margin-top: 8%;
+  margin-right: 10%;
+
+}
+.btn-signIn {
+  width: 52.2vw;
+  padding: 1.6% 13.9%;
+  border: 1px solid $ocean;
+  border-radius: 5px;
+  background-color: $ocean;
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 2.4%;
+  margin-bottom: 4%;
+}
+.btn-create-user {
+  width: 52.2vw;
+  padding: 1.6% 13.9%;
+  border: 1px solid $ocean;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.6rem;
+  color: $ocean;
+}
+.btn-create-google{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 52.2vw;
+    padding: 1.6% 13.9%;
+    border: 1px solid $ocean;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $ocean;
+    margin-top: 2.4%;
+    margin-bottom: 10%;
+}
+.google-logo{
+    width: auto;
+    height: 2vh;  
+}
+
+// Clases de RecovesPass
+
+.recover-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+.input-container-RP{
+    display: flex;
+    flex-direction: row;
+    width: 84.2vw;
+    border-bottom: 1px solid $cloudyBlue;
+    margin-top: 2.7vh;
+}
+.btn-recover-pass{
+    width: 52.2vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: $ocean;
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 8%;
+}
+
+// Estilos SelectLogin
+
+.bg-selectLogin{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url('../assets/img/Log-Register/fondo.svg');
+}
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7.2vh;
+}
+.select-button{
+  width: 52vw;
+  height: 30pt;
+  background-color: $ocean;
+  border: 0px;
+  border-radius: 5pt;
+  margin-bottom: 2.4vh;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+}
+.buttons-container h2{
+  font-size: 2rem;
+  font-style: medium;
+  font-weight: 400;
+  color: $pineGreen;
+}
+.p-buttons{
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.2rem;
+  color: $pineGreen;
+  text-decoration: none;
+}
