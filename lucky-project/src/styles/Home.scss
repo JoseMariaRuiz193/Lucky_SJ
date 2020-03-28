@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 90vw;
   margin-top: 20%;
   height: 73%;
   border-top: 1px solid $cloudyBlue;
@@ -65,10 +65,13 @@
   border-radius: 7px;
   margin-bottom: 10%;
 }
+.img-wrap{
+  width: 100%;
+  overflow: hidden;
+}
 .notice-image {
   margin-top: 1%;
-  width: 98%;
-  border-radius: 7px 7px 0px 0px;
+  width: 100%;
 }
 .text-notice {
   height: 2%;
