@@ -10,12 +10,15 @@ import Login from '../Log-Register/LoginUser';
 import Profile from '../Profile/UserProfile';
 import SelectLogin from '../Log-Register/SelectLogin';
 import Menu from '../Menu/Menu';
+import Maps_map from '../Map/Maps_map';
 
 export default function Routes (){
     return(
         <Switch>
-            <Route exact path = '/' component={WelcomePage}/>
+            {/* <Route exact path = '/' component={WelcomePage}/> */}
+            <Route exact path = '/' component={Home}/>
             <Route exact path = '/home' component={Home}/>
+            
             <Route exact path = '/onboarding' component={OnBoarding}/>
             <Route exact path = '/login' component={SelectLogin}/>
             <Route exact path = '/login-user' component={Login}/>
@@ -23,6 +26,7 @@ export default function Routes (){
             <Route exact path = '/registro/recuperar-contraseña' component={RecoverPass}/>
             <Route exact path = '/profile' component={Profile}/>
 
+            <Route exact path = '/map' component={Maps_map}/>
             <Route exact path = '/menu' component={Menu}/>
         </Switch>
     )

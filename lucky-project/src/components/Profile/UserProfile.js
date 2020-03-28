@@ -12,10 +12,11 @@ import kiko from '../../assets/img/user/Kiko.png';
 export default function UserProfile () {
     var settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows : false,
       };
 
     return(

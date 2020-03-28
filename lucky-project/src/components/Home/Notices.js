@@ -7,26 +7,35 @@ import dog from '../../assets/img/home/perro.png';
 
 export default function Notices (){
     
-    return(   
+    return(  
+        <div className='content'>
     <div className='notices'>
 
         <h3 className='novedades'>Novedades</h3>
 
     <div className='single-notice'>
+        <div className='img-wrap'>
             <img className='notice-image' src={chinchillas}/>
+        </div>
         <p className='text-notice'>10 curiosidades sobre las chinchillas</p>
     </div>
     
     <div className='single-notice'>
+        <div className='img-wrap'>
             <img className='notice-image' src={iguana}/>
+        </div>
         <p className='text-notice'>¿Sabes qué comen las iguanas?</p>
     </div>
 
     <div className='single-notice'>
-            <img className='notice-image'  src={dog}/>
+        <div className='img-wrap'>
+            <img className='notice-image' src={dog}/>
+        </div>
         <p className='text-notice'>10 lugares para visitar con tu perro en Madrid</p>
     </div>
     </div>
+
+    </div> 
     )
 }
 

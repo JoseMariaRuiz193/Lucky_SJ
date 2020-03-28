@@ -1,7 +1,7 @@
 
 var mongoose = require('mongoose');
 var app = require('./app');
-var port = 2020;
+var port = 3000;
 mongoose.set('useFindAndModify', false);
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost:27017/lucky', { useNewUrlParser: true })
