@@ -51,7 +51,7 @@ var controller = {
         var userId = req.params.id;
         User.findByIdAndDelete({ _id: userId }, (err, userDeleted) => {
             if (err || !userDeleted) {
-                return res.status(404).sen({
+                return res.status(404).send({
                     status: 'error',
                     message: 'Error al borrar usuario'
                 });
@@ -112,7 +112,7 @@ var controller = {
                 message: file_name
             });
         }
-        var file_path = req.files.file.path;
+        var file_path = req.files.image.path;
         var file_split = file_path.split('\\');
         var file_name = file_split[2];
         var extension_split = file_name.split('\.');
