@@ -20,6 +20,7 @@ router.put('/animal/:id', AnimalController.update);
 router.get('/animals/:last?', AnimalController.getAnimals);
 router.post('/upload-image/animal/:id', md_uploadanimals, AnimalController.upload);
 router.get('/search/:search', AnimalController.search);
+router.get('/filters/:filters', AnimalController.filters);
 
 
 module.exports = router;

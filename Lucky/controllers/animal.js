@@ -250,6 +250,37 @@ var controller = {
                 });
 
             })
+    },
+    filters: (req, res) => {
+        var filtersString = req.params.filters;
+        Animal.find({
+            "$or": [
+                { "size": { "$regex": filtersString, "$options": "i" } },
+                { "city": { "$regex": filtersString, "$options": "i" } },
+                { "sex": { "$regex": filtersString, "$options": "i" } },
+                { "species": { "$regex": filtersString, "$options": "i" } },]
+        })
+            .sort([['date', 'descending']])
+            .exec((err, animals) => {
+                if (err) {
+                    return res.status(500).send({
+                        status: 'error',
+                        message: 'Error en la peticion'
+                    });
+                }
+                if (!animals || animals.length <= 0) {
+                    return res.status(404).send({
+                        status: 'error',
+                        message: 'No hay animales que coincidan con tus filtros!!'
+                    });
+
+                }
+                return res.status(200).send({
+                    status: 'success',
+                    animals
+                });
+
+            })
     }
 
 };
