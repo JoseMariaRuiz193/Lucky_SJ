@@ -1,3 +1,6 @@
+@import './src/styles/generic/icomoon/style.scss';
+@import './styles/generic/icomoon/style.scss';
+
 // Colores
 
 $ice: #f1fffa;
@@ -8,6 +11,7 @@ $pineGreen: #0e363d;
 $black: #2d2d2d;
 $white: #d8d8d8;
 $lightSalmon: #fa9c93;
+$greyishBrown: #555555;
 
 
 // Estilos App General
@@ -19,6 +23,7 @@ y multiplicamos por 100, y tendremos nuestro VW
 
 html{
   font-size: 10px;
+  font-family:  'Barlow', sans-serif;
 }
 .App{
   box-sizing: border-box;
@@ -27,6 +32,13 @@ html{
   padding: 0px;
   margin: 0px;
   font-family:  'Barlow', sans-serif;
+}
+ul{
+  padding-inline-start: 0rem;
+}
+h3{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 .content{
     width: 100vw;

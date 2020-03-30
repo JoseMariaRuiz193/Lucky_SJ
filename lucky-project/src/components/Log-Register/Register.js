@@ -65,7 +65,6 @@ export default function Register(){
                 <Link to='/registro/recuperar-contraseña' className = 'forget-pass'>¿Has olvidado tu contraseña?</Link>
             </div>
                 <input type='button' className= 'btn-create-user' value='Crear cuenta'/>
-                <Link to='#' className= 'btn-create-google'><img className='google-logo' src={google}/>Iniciar sesión</Link>
         </div>
     )
 }

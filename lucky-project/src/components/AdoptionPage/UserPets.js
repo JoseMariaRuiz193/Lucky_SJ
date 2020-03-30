@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Profile.scss';
+import '../../styles/AdoptionPage.scss';
 import filters from '../../assets/icons_svg/filtros.svg';
 import dogImg from '../../assets/img/user/uli-1-copy-2@3x.png';
 

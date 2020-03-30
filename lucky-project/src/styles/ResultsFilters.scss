@@ -1,0 +1,194 @@
+@import "../App.scss";
+@import '../styles/generic/icomoon/style.scss';
+
+// Hoja de estilos Results Filters;
+
+.filter-search-container{}
+.search-filters{}
+
+// Estilos de DataProfile 
+
+.btn-atras-container{
+    width: 100%;
+    align-items: flex-start;
+}
+.icon-atras{
+    margin-left: 8vw;
+    top: 6.3%;
+    z-index: 3;
+    position: absolute;
+
+}
+.name-animal-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 60%;
+    height: 8.8vh;
+    top: 23vh;
+    background-color: white;
+    border-radius: 4pt;
+    position: absolute;
+    z-index: 2;
+}
+.name-animal{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.name-animal h3{
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $black;
+}
+.name-animal p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: $black;
+}
+.name-animal-container img{
+    margin-left: 7%;
+    margin-right: 4%;
+    width: 5.5vw;
+    height: 5.5vh;
+}
+.img-filters{
+    width: 100vw;
+    z-index: 1;
+}
+
+// Estilos de Datos de Adopcion
+
+.box-data{
+    display: flex;
+    flex-direction: column;
+    width: 94.5%;
+    height: 10%;
+    border-radius: 4pt;
+    border: 1pt solid #01748e20;
+    margin-bottom: 3.6vh;
+}
+.box-data h3{
+    padding: 2%;
+    margin: 0 0 2% 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $ocean;
+}
+.box-data p{
+    padding: 2%;
+    margin: 0 0 5% 0;
+    font-size: 1.6rem;
+    color: $black;
+}
+
+// Estilos del navegador
+
+nav{
+    margin-top: 7.5vh;
+    width: 100vw;
+    display: flex;
+}
+.nav-animal{
+    margin-left: 0%;
+    margin-bottom: 2.7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.data-results{
+    width: 33vw;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $greyishBrown;
+}
+.active{
+    font-weight: 600;
+    border-bottom: 2pt solid $lightSalmon;
+    text-decoration: none;
+}
+
+// Estilos de datos
+
+.general-data{
+    display: flex;
+    flex-direction: column;
+    width: 91.5%;
+    height: 40%;
+    margin-bottom: 3.6vh; 
+}
+
+.data-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2vh; 
+}
+.text-container{
+    display: flex;
+    flex-direction: row;
+    width: 86.5%;
+    height: 5.5%;
+    justify-content: space-between;
+}
+.text-container h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    color: $black;
+}
+.text-container p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    color: $black;
+    text-align: right;
+}
+.data-container img{
+    width: 5.5%;
+    height: 5.5%;
+    margin-right: 2vw;
+}
+
+// Contenedor de historia de animal e imput
+
+.animal-story-container{
+    width: 94.6%;
+    height: auto;
+    border: 1pt solid #01748e20;
+    border-radius: 4pt;
+    text-align: left;
+}
+.animal-story-container h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $ocean;
+    padding: 0 1.7% 0 1.7%;
+}
+.animal-story-container p{
+    font-size: 1.6rem;
+    color: $black;
+    padding: 0 1.7% 0 1.7%;
+}
+.btn-adopt{
+    width: 28%;
+    height: 5.2vh;
+    font-size: 1.6rem;
+    background-color: $lightSalmon;
+    border-radius: 4pt;
+    color: white;
+    margin-bottom: 5vh;
+    border: 0;
+}
+
+
+
