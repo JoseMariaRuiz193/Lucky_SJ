@@ -36,7 +36,7 @@ export default function Login() {
       </div>
 
         <input type='button' className= 'btn-signIn' value='Iniciar sesión'/>
-        <input type='button' className= 'btn-create-user' value='Crear cuenta'/>
+        <Link to='/registro'><input type='button' className= 'btn-create-user' value='Crear cuenta'/></Link>
 
     </div>
   );

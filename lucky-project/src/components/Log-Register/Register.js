@@ -42,6 +42,13 @@ export default function Register(){
                 </div>
 
                 <div className='input-container'>
+                <input type='date' className ='data-form' id='date' placeholder='Fecha de Nacimiento' required/>
+                <div className='image'>
+                <img className='check' src={check}/>
+                </div>
+                </div>
+
+                <div className='input-container'>
                 <input type='text' className ='data-form' id='email' placeholder='Email' required/>
                 <div className='image'>
                 <img className='check' src={check}/>

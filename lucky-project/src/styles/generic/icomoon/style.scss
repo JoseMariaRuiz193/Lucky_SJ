@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9deatn');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?9deatn#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?9deatn') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9deatn') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?9deatn##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?w2pa1q');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?w2pa1q#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?w2pa1q') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?w2pa1q') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?w2pa1q##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,16 +27,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mapa {
-  &:before {
-    content: $icon-mapa; 
-  }
-}
-.icon-home {
-  &:before {
-    content: $icon-home; 
-  }
-}
 .icon-atras {
   &:before {
     content: $icon-atras; 
@@ -47,14 +37,59 @@
     content: $icon-buscar; 
   }
 }
+.icon-cat {
+  &:before {
+    content: $icon-cat; 
+  }
+}
+.icon-conejo {
+  &:before {
+    content: $icon-conejo; 
+  }
+}
+.icon-female {
+  &:before {
+    content: $icon-female; 
+  }
+}
 .icon-filtros {
   &:before {
     content: $icon-filtros; 
   }
 }
-.icon-more {
+.icon-group-copy-2 {
   &:before {
-    content: $icon-more; 
+    content: $icon-group-copy-2; 
+  }
+}
+.icon-group-copy {
+  &:before {
+    content: $icon-group-copy; 
+  }
+}
+.icon-group {
+  &:before {
+    content: $icon-group; 
+  }
+}
+.icon-hamster {
+  &:before {
+    content: $icon-hamster; 
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
+}
+.icon-male {
+  &:before {
+    content: $icon-male; 
+  }
+}
+.icon-mapa {
+  &:before {
+    content: $icon-mapa; 
   }
 }
 .icon-mas-button {
@@ -67,31 +102,23 @@
     content: $icon-mascota; 
   }
 }
+.icon-more {
+  &:before {
+    content: $icon-more; 
+  }
+}
 .icon-ojo {
   &:before {
     content: $icon-ojo; 
   }
 }
-.icon-facebook2 {
+.icon-perro {
   &:before {
-    content: $icon-facebook2; 
+    content: $icon-perro; 
   }
 }
-.icon-instagram {
-  &:before {
-    content: $icon-instagram; 
-  }
-}
-.icon-whatsapp {
-  &:before {
-    content: $icon-whatsapp; 
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search; 
-  }
-}
+
+// Correción de los iconos
 
 .icon-home{
   color: #01748e;

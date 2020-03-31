@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function ResultsFilters () {
+
+    const [animals, setAnimals] = useState({
+        
+        img: '',
+        name: '',
+        city: ''
+
+    })
 
     return(
         <div className='content'>
