@@ -1,12 +1,10 @@
-
-
 var validator = require('validator');
 var fs = require('fs');
 var path = require('path');
 var Animal = require('../Estructura/animal');
 
 var controller = {
-
+    
     save: (req, res) => {
         var params = req.body;
         try {

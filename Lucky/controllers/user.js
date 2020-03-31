@@ -11,6 +11,7 @@ var controller = {
             var validate_username = !validator.isEmpty(params.username);
             var validate_name = !validator.isEmpty(params.name);
             var validate_surname = !validator.isEmpty(params.surname);
+            var validate_birthday = !validator.isEmpty(params.birthday);
             var validate_email = !validator.isEmpty(params.email);
             var validate_password = !validator.isEmpty(params.password);
         } catch (error) {
@@ -19,12 +20,13 @@ var controller = {
                 message: 'Faltan datos'
             });
         }
-        if (validate_username && validate_name && validate_surname && validate_email && validate_password) {
+        if (validate_username && validate_name && validate_surname && validate_birthday && validate_email && validate_password) {
             var user = new User();
             user.image = null;
             user.username = params.username;
             user.name = params.name;
             user.surname = params.surname;
+            user.birthday = params.birthday;
             user.email = params.email;
             user.password = params.password;
             user.save((err, userStored) => {
