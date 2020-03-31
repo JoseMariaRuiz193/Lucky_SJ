@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import imgOB1 from '../../assets/img/on_boarding/undrawGoodDoggy4Wfq.svg';
 import imgOB2 from '../../assets/img/on_boarding/imagen2.svg';
 import imgOB3 from '../../assets/img/on_boarding/undrawPetAdoption2Qkw.svg';
-import CloseButton from './CloseButton';
+import CloseButton from './subcomponents/CloseButton';
 
 
 export default function OnBoarding() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/AdoptionForm.scss';
-import formImg from '../../assets/img/formulario/undrawPlayfulCatRchv.svg';
+import '../../../styles/AdoptionForm.scss';
+import formImg from '../../../assets/img/formulario/undrawPlayfulCatRchv.svg';
 
 export default function SubmittedForm () {
 

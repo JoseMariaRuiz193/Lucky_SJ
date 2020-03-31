@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../styles/ResultsFilters.scss';
+import '../../styles/AnimalProfile.scss';
 import loro from '../../assets/img/animals/maxresdefault@3x.png';
-import DataNav from './DataNav';
+import DataNav from './subcomponents/DataNav';
 import { Link } from 'react-router-dom';
 import sexIco from '../../assets/icons_svg/male.svg';
 import pawPrint from '../../assets/img/data/pawprint@3x.png';
 
-export default function DataHealth () {
+export default function DataPage () {
 
     return(
         <div className='content'>
@@ -33,8 +33,8 @@ export default function DataHealth () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Vacunado</h3>
-                <p>Si</p>
+                <h3>Especie</h3>
+                <p>Ave</p>
                 </div>
 
             </div>
@@ -43,8 +43,8 @@ export default function DataHealth () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Desparasitado</h3>
-                <p>Si</p>
+                <h3>Fecha de nacimiento</h3>
+                <p>03-08-2018</p>
                 </div>
 
             </div>
@@ -53,8 +53,8 @@ export default function DataHealth () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Sano</h3>
-                <p>Si</p>
+                <h3>Sexo</h3>
+                <p>Macho</p>
                 </div>
 
             </div>
@@ -63,8 +63,8 @@ export default function DataHealth () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Esterilizado</h3>
-                <p>No</p>
+                <h3>Tamaño</h3>
+                <p>Pequeño</p>
                 </div>
 
             </div>
@@ -73,18 +73,8 @@ export default function DataHealth () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Identificado</h3>
-                <p>No</p>
-                </div>
-
-            </div>
-
-            <div className='data-container'>
-                <img src={pawPrint}/>
-
-                <div className='text-container'>
-                <h3>Microchip</h3>
-                <p>No</p>
+                <h3>Peso</h3>
+                <p>0,3 KG</p>
                 </div>
 
             </div>

@@ -1,0 +1,22 @@
+
+.circle{background:#057690;
+  mask-image: url("../assets/icons_svg/user.svg");mask-position: center;mask-repeat: no-repeat;}
+
+  .object-mask {
+    mask-image: url("../assets/icons_svg/user.svg");
+    mask-repeat: no-repeat;
+    mask-size: 79px;
+    mask-position: center;
+    padding:4px;
+  }
+
+  .li--perfil .circle{background:none;
+    mask-image:none}
+
+    .li--perfil .circle img.object-mask{mask-size:28px; padding:0px;} 
+    .li--perfil a.active .circle{background:#fa9c93; mask-image: url("../assets/icons_svg/user.svg");mask-position: center;mask-repeat: no-repeat;}
+    .li--perfil a.active .circle img.object-mask{padding:2px}
+/* 
+.li--perfil  .circle{background:#fa9c93}
+.li--perfil .circle .object-mask{mask-size:26px;}
+  .li--perfil img{width:9vw}*/

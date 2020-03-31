@@ -2,21 +2,22 @@ import React, { Profiler } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import WelcomePage from '../../components/WelcomePage/WelcomePage';
-import Register from '../Log-Register/Register';
-import RecoverPass from '../Log-Register/RecoverPass';
+import Register from '../Log-Register/Register/Register';
+import RecoverPass from '../Log-Register/subcomponents/RecoverPass';
 import Home from '../Home/Home';
 import OnBoarding from '../OnBoarding/OnBoarding';
-import Login from '../Log-Register/LoginUser';
+import Login from '../Log-Register/Login/LoginUser';
 import AdoptionPage from '../AdoptionPage/AdoptionPage';
 import SelectLogin from '../Log-Register/SelectLogin';
 import Menu from '../Menu/Menu';
 import Maps_map from '../Map/Maps_map';
-import SubmittedForm from '../AdoptionForm/SubmittedForm';
-import Advertisement from '../AdoptionForm/Advertisement';
+import SubmittedForm from '../AdoptionForm/subcomponents/SubmittedForm';
+import Advertisement from '../AdoptionForm/subcomponents/Advertisement';
 import ResultsFilters from '../Filters/ResultsFilters';
-import DataPage from '../Filters/DataPage';
-import DataHealth from '../Filters/DataHealth';
-import DataAdoption from '../Filters/DataAdoption';
+import DataPage from '../AnimalProfile/DataPage';
+import DataAdoption from '../AnimalProfile/subcomponents/DataAdoption';
+import DataHealth from '../AnimalProfile/subcomponents/DataHealth';
+
 
 export default function Routes (){
     return(

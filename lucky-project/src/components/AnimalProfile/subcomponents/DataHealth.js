@@ -1,12 +1,12 @@
 import React from 'react';
-import '../../styles/ResultsFilters.scss';
-import loro from '../../assets/img/animals/maxresdefault@3x.png';
+import '../../../styles/AnimalProfile.scss';
+import loro from '../../../assets/img/animals/maxresdefault@3x.png';
 import DataNav from './DataNav';
 import { Link } from 'react-router-dom';
-import sexIco from '../../assets/icons_svg/male.svg';
-import pawPrint from '../../assets/img/data/pawprint@3x.png';
+import sexIco from '../../../assets/icons_svg/male.svg';
+import pawPrint from '../../../assets/img/data/pawprint@3x.png';
 
-export default function DataPage () {
+export default function DataHealth () {
 
     return(
         <div className='content'>
@@ -33,8 +33,8 @@ export default function DataPage () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Especie</h3>
-                <p>Ave</p>
+                <h3>Vacunado</h3>
+                <p>Si</p>
                 </div>
 
             </div>
@@ -43,8 +43,8 @@ export default function DataPage () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Fecha de nacimiento</h3>
-                <p>03-08-2018</p>
+                <h3>Desparasitado</h3>
+                <p>Si</p>
                 </div>
 
             </div>
@@ -53,8 +53,8 @@ export default function DataPage () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Sexo</h3>
-                <p>Macho</p>
+                <h3>Sano</h3>
+                <p>Si</p>
                 </div>
 
             </div>
@@ -63,8 +63,8 @@ export default function DataPage () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Tamaño</h3>
-                <p>Pequeño</p>
+                <h3>Esterilizado</h3>
+                <p>No</p>
                 </div>
 
             </div>
@@ -73,8 +73,18 @@ export default function DataPage () {
                 <img src={pawPrint}/>
 
                 <div className='text-container'>
-                <h3>Peso</h3>
-                <p>0,3 KG</p>
+                <h3>Identificado</h3>
+                <p>No</p>
+                </div>
+
+            </div>
+
+            <div className='data-container'>
+                <img src={pawPrint}/>
+
+                <div className='text-container'>
+                <h3>Microchip</h3>
+                <p>No</p>
                 </div>
 
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import closeButton from "../../assets/icons_svg/cerrar.svg";
+import closeButton from "../../../assets/icons_svg/cerrar.svg";
 
 export default function CloseButton() {
   return (

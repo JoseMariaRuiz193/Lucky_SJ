@@ -1,9 +1,9 @@
 import React from 'react';
-import '../../styles/Home.scss';
+import '../../../styles/Home.scss';
 
-import chinchillas from '../../assets/img/home/chinchillas.png';
-import iguana from '../../assets/img/home/iguana.png';
-import dog from '../../assets/img/home/perro.png';
+import chinchillas from '../../../assets/img/home/chinchillas.png';
+import iguana from '../../../assets/img/home/iguana.png';
+import dog from '../../../assets/img/home/perro.png';
 
 export default function Notices (){
     

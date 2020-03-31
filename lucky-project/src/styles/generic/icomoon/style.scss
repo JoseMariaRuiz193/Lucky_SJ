@@ -1,5 +1,17 @@
 @import "variables";
 
+// Colores
+
+$ice: #f1fffa;
+$tiffanyBlue: #6af7dd;
+$cloudyBlue: #bdd2d6;
+$ocean: #01748e;
+$pineGreen: #0e363d;
+$black: #2d2d2d;
+$white: #d8d8d8;
+$lightSalmon: #fa9c93;
+$greyishBrown: #555555;
+
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?w2pa1q');
@@ -120,6 +132,7 @@
 
 // Correción de los iconos
 
+
 .icon-home{
   color: #01748e;
   font-size: 6.4vw;
@@ -136,8 +149,10 @@
   color: #01748e;
   font-size: 6.4vw;
 }
-.icon-atras {
-  color: #fa9c93;
+
+
+.icon-atras{
+  color: $lightSalmon;
   font-size: 6.4vw;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../styles/AdoptionPage.scss';
-import SearchBar from './SearchBar';
-import UserPets from './UserPets';
+import SearchBar from './subcomponents/SearchBar';
+import UserPets from './subcomponents/UserPets';
 import Menu from '../Menu/Menu';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';

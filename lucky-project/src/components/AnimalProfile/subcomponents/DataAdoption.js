@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../styles/ResultsFilters.scss';
-import loro from '../../assets/img/animals/maxresdefault@3x.png';
+import '../../../styles/AnimalProfile.scss';
+import loro from '../../../assets/img/animals/maxresdefault@3x.png';
 import DataNav from './DataNav';
-import sexIco from '../../assets/icons_svg/male.svg';
+import sexIco from '../../../assets/icons_svg/male.svg';
 import { Link } from 'react-router-dom';
 
 export default function DataAdoption () {

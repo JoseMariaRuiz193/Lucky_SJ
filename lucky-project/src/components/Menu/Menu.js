@@ -6,7 +6,7 @@ import profileIco from '../../assets/icons_svg/user.svg';
 export default function Menu() {
     return(
         <div className='menu-footer'>
-            <nav>
+            <nav className='reset-nav'>
                 <ul className='menu-Container'>
                     <li className="menu-ico">
                     <NavLink to='/inicio' activeClassName='active'><span className='icon-home'/></NavLink>
@@ -21,11 +21,11 @@ export default function Menu() {
                     </li>
 
                     <li className="menu-ico">
-                    <NavLink to='/'><img src={profileIco}/></NavLink>
+                    <NavLink to='/perfil' activeClassName='active'><img src={profileIco}/></NavLink>
                     </li>
                     
                     <li className="menu-ico">
-                    <NavLink to='/' activeClassName='active'><span className='icon-more'/></NavLink>
+                    <NavLink to='/mas' activeClassName='active'><span className='icon-more'/></NavLink>
                     </li>
                 </ul>
             </nav>

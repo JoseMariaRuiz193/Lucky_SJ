@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "../../styles/Log-Register.scss";
-import logoLucky from "../../assets/img/register/logo.svg";
-import check from "../../assets/img/register/checkmark.svg";
-import ojo from "../../assets/icons_svg/ojo.svg";
+import "../../../styles/Log-Register.scss";
+import logoLucky from "../../../assets/img/register/logo.svg";
+import check from "../../../assets/img/register/checkmark.svg";
+import ojo from "../../../assets/icons_svg/ojo.svg";
 
 export default function Login() {
   return (

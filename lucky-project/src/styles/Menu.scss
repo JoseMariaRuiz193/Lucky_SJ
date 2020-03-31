@@ -2,7 +2,10 @@
 @import '../styles/generic/icomoon/style.scss';
 
 // Hoja de estilos Menu
-
+.reset-nav{
+    padding: 0;
+    margin: 0;
+}
 .menu-footer{
 position: sticky;
 bottom: 0;
@@ -23,9 +26,19 @@ bottom: 0;
     list-style: none;
     text-decoration: none;
 }
+.menu-Container li a{
+    text-decoration:none;
+}
 .menu-ico img{
     width: 6.4vw;
 }
-.active{
+.menu-Container li a.active{
     color: $lightSalmon;
+    text-decoration:none;
+    border:none;
 }
+.menu-Container li a.active span{
+    color:$lightSalmon
+}
+
+

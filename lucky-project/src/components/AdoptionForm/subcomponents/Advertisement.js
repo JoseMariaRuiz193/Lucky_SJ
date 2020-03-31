@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/AdoptionForm.scss';
-import video from '../../assets/img/advertencia/group5.svg';
+import '../../../styles/AdoptionForm.scss';
+import video from '../../../assets/img/advertencia/group5.svg';
 
 export default function Advertisement () {
 
