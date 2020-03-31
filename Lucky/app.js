@@ -17,14 +17,8 @@ app.use((req, res, next) => {
 	res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
 	next();
 });
-const cors = require("cors");
-app.use(
- cors({
- origin: "http://localhost:3000",
- optionsSuccessStatus: 200,
- credentials: true
- })
-);
+app.use('/api', user_routes);
+
 
 
 module.exports = app;
