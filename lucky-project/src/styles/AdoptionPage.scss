@@ -3,29 +3,12 @@
 // Hoja de estilos de Perfil
 
 // Barra de búsqueda
-
-.search-container{
-  margin-top: 6.4vh;
-  margin-bottom: 4.6vh;
-
-  width: 70vw;
-  height: 4.2%;
-  border: 1px solid $cloudyBlue;
-  border-radius: 28px;
-  font-size: 2rem;
-  padding: 0% 6.2% 0% 6.2%;
-}
-.search-container input {
-  width: 78.5%;
+.search{
+  width: 90%;
   height: 4.2%;
   font-size: 2rem;
   text-align: left;
-}
-.search-ico {
-  width: 11.5%;
-}
-.search-ico img {
-  width: 85.7%;
+  margin-bottom: 4.6vh;
 }
 
 // Estilos del carrusel de iconos

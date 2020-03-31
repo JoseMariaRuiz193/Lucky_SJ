@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Profile.scss';
+import '../../styles/AdoptionPage.scss';
 import SearchBar from './SearchBar';
 import UserPets from './UserPets';
 import Menu from '../Menu/Menu';
@@ -9,7 +9,7 @@ import apolo from '../../assets/img/user/Apolo.png';
 import dali from '../../assets/img/user/Dali.png';
 import kiko from '../../assets/img/user/Kiko.png';
 
-export default function UserProfile () {
+export default function AdoptionPage () {
     var settings = {
         dots: true,
         infinite: false,
