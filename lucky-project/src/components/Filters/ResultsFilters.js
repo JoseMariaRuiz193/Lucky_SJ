@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../../styles/ResultsFilters.scss';
+import flecha from '../../assets/icons_svg/atras.svg';
 
 export default function ResultsFilters () {
 
@@ -18,9 +20,14 @@ export default function ResultsFilters () {
         <div className='content'>
 
             <div className='filter-search-container'>
-                <span className='icon-atras'/>
-                <input className='search-filters' type='text' placeholder='Buscar'/>
+                <img src={flecha} className='back-btn'/>
+
+                <div className='search-container'>
+                <input type='text' className='search-filters' placeholder='Buscar'/>
                 <span className='icon-buscar'/>
+                </div>
+               
+
                 <span className='icon-filtros '/>
             </div>
 
