@@ -5,8 +5,6 @@ import video from '../../../assets/img/advertencia/group5.svg';
 export default function Advertisement () {
 
     return(
-        <div className='content'>
-
             <div className='advertisement-container'>
 
                 <h2 className='advertisement-title'>Solicitud de adopción</h2>
@@ -25,11 +23,7 @@ export default function Advertisement () {
                     <input id='cancelar' type='button' value='Cancelar'/>
                     <input id='continuar' type='button' value='Continuar'/>
                 </div>
-
-
-
             </div>
 
-        </div>
     )
 }

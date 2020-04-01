@@ -52,6 +52,7 @@
 }
 
 // Estilos del contenedor de mascotas
+
 .pets-container {
   width: 90%;
   display: flex;
@@ -94,11 +95,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-bottom: 10%;
     width: 89%;
     height: 38%;
     border: 2px solid $cloudyBlue;
     border-radius: 8px;
+
     
 }
 .animal-profile {

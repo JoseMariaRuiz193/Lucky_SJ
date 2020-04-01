@@ -189,5 +189,17 @@ nav{
     border: 0;
 }
 
+// POPUP
+
+.container-bg{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+    background-color: #bdd2d6d8;
+    width: 100vw;
+    height: 100vh;
+}
 
 

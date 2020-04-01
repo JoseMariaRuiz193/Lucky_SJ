@@ -33,7 +33,7 @@
   margin-bottom: 4.8%;
 }
 .pop-up-container p {
-    width: 75%;
+  width: 75%;
   font-size: 1.6rem;
   color: $pineGreen;
   margin-bottom: 2.6%;
@@ -52,9 +52,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 7.5vh;
+    // margin-top: 7.5vh;
     width: 84vw;
-    height: 83%;
+    height: 65%;
     background-color: white;
     border-radius: 12pt;
 }
@@ -106,8 +106,12 @@
     text-align: center;
     text-justify: distribute;
     color: $pineGreen;
-    opacity: 50%;
-    
+    opacity: 50%; 
+    border-radius: 0 0 12pt 0;
+}
+#continuar:hover{
+    color: white;
+    background-color: $ocean;
 }
 #cancelar{
     padding: 3%;
@@ -118,4 +122,9 @@
     text-justify: distribute;
     color: $lightSalmon;
     border-right: 1px solid $cloudyBlue;
+    border-radius: 0 0 0 12pt;
+}
+#cancelar:hover{
+  color: white;
+  background-color: $lightSalmon;
 }

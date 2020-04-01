@@ -35,6 +35,9 @@ html{
   margin: 0px;
   font-family:  'Barlow', sans-serif;
 }
+input:focus{
+  outline:0px;
+}
 ul{
   padding-inline-start: 0rem;
 }
