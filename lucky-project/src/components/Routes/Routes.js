@@ -9,7 +9,6 @@ import OnBoarding from '../OnBoarding/OnBoarding';
 import Login from '../Log-Register/Login/LoginUser';
 import AdoptionPage from '../AdoptionPage/AdoptionPage';
 import SelectLogin from '../Log-Register/SelectLogin';
-import Menu from '../Menu/Menu';
 import Maps_map from '../Map/Maps_map';
 import SubmittedForm from '../AdoptionForm/subcomponents/SubmittedForm';
 import Advertisement from '../AdoptionForm/subcomponents/Advertisement';
@@ -17,6 +16,8 @@ import ResultsFilters from '../Filters/ResultsFilters';
 import DataPage from '../AnimalProfile/DataPage';
 import DataAdoption from '../AnimalProfile/subcomponents/DataAdoption';
 import DataHealth from '../AnimalProfile/subcomponents/DataHealth';
+import ProfilePage from '../AdoptionPage/ProfilePage/ProfilePage';
+import MorePage from '../MorePage/MorePage';
 
 
 export default function Routes (){
@@ -26,18 +27,26 @@ export default function Routes (){
     
         <Switch>
             {/* <Route exact path = '/' component={WelcomePage}/> */}
-            <Route exact path = '/' component={Home}/>
+
+            {/** Rutas MENÚ */}
+
+            <Route exact path = '/' component={WelcomePage}/>
             <Route exact path = '/inicio' component={Home}/>
-            
-            <Route exact path = '/onboarding' component={OnBoarding}/>
+            <Route exact path = '/mapa' component={Maps_map}/>
+            <Route exact path = '/adopcion' component={AdoptionPage}/>
+            <Route exact path = '/perfil' component={ProfilePage}/>
+            <Route exact path = '/mas' component={MorePage}/>
+
+            {/** Rutas necesarias para componentes */}
+
+            <Route exact path = '/tutorial' component={OnBoarding}/>
             <Route exact path = '/login' component={SelectLogin}/>
-            <Route exact path = '/login-user' component={Login}/>
+            <Route exact path = '/login-usuario' component={Login}/>
             <Route exact path = '/registro' component={Register}/>
             <Route exact path = '/registro/recuperar-contraseña' component={RecoverPass}/>
-            <Route exact path = '/adopcion' component={AdoptionPage}/>
+            
 
-            <Route exact path = '/mapa' component={Maps_map}/>
-            <Route exact path = '/menu' component={Menu}/>
+            
 
             {/** Rutas para probar componentes */}
             

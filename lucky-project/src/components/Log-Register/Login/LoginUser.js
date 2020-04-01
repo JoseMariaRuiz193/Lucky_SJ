@@ -31,7 +31,8 @@ export default function Login() {
             <img className="check" src={ojo} />
         </div>
 
-        <p className='forget-pass'>¿Has olvidado tu contraseña?</p>
+        <Link to='/registro/recuperar-contraseña' className='forget-pass'><p>¿Has olvidado tu contraseña?</p></Link>
+        
 
       </div>
 

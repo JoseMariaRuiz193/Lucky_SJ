@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/Maps_map.scss';
 import Menu from '../Menu/Menu';
+import MapSimple from './subcomponents/MapSimple';
 
 export default function Maps_map () {
     return(
@@ -10,6 +11,7 @@ export default function Maps_map () {
             </div>
 
             <div className='map-container'>
+                <MapSimple/>
             </div>
                 {/* <submit><img className='search-ico' src={searchIco}/></submit> */} 
         <Menu/>          
