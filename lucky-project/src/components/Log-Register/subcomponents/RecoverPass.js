@@ -8,14 +8,14 @@ export default function RecoverPass (){
     return(
         <div className='content'>
           <div className='logo-container'>
-            <Link to='/home' className ='logo-lucky'><img src={logoLucky}/></Link>
+            <Link to='/inicio' className ='logo-lucky'><img src={logoLucky}  alt='logo aplicación'/></Link>
             </div>
             <h1 className='title-form'>Recuperar Contraseña</h1>
            <div className='recover-container'>
                 <div className='input-container-RP'>
                 <input type='text' className ='data-form' id='recover-email' placeholder='Introduce tu Email' required/>
                 <div className='image'>
-                  <img className='check' src={check}/>
+                  <img className='check' src={check}  alt='logo confirmado'/>
                 </div>
             </div>
           </div>

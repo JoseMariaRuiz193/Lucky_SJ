@@ -13,10 +13,10 @@ export default function DataPage () {
 
             {/** Encabezado superior con foto del animal */}
         
-            <div className='btn-atras-container'><Link to='/filtros'><span className='icon-atras'/></Link></div>
-            <img className='img-filters' src={loro}/>
+            <div className='btn-atras-container'><Link to='/adopcion'><span className='icon-atras'/></Link></div>
+            <img className='img-filters' src={loro} alt='foto de animal'/>
             <div className='name-animal-container'>
-                <img src={sexIco}/>
+                <img src={sexIco} alt=''/>
                     <div className='name-animal'>
                     <h3>Blue</h3>
                     <p>Madrid</p>
@@ -30,7 +30,7 @@ export default function DataPage () {
             <div className='general-data'>
 
             <div className='data-container'>
-                <img src={pawPrint}/>
+                <img src={pawPrint} alt=''/>
 
                 <div className='text-container'>
                 <h3>Especie</h3>
@@ -40,7 +40,7 @@ export default function DataPage () {
             </div>
 
             <div className='data-container'>
-                <img src={pawPrint}/>
+                <img src={pawPrint} alt=''/>
 
                 <div className='text-container'>
                 <h3>Fecha de nacimiento</h3>
@@ -50,7 +50,7 @@ export default function DataPage () {
             </div>
 
             <div className='data-container'>
-                <img src={pawPrint}/>
+                <img src={pawPrint} alt=''/>
 
                 <div className='text-container'>
                 <h3>Sexo</h3>
@@ -60,7 +60,7 @@ export default function DataPage () {
             </div>
 
             <div className='data-container'>
-                <img src={pawPrint}/>
+                <img src={pawPrint} alt=''/>
 
                 <div className='text-container'>
                 <h3>Tamaño</h3>
@@ -70,7 +70,7 @@ export default function DataPage () {
             </div>
 
             <div className='data-container'>
-                <img src={pawPrint}/>
+                <img src={pawPrint} alt=''/>
 
                 <div className='text-container'>
                 <h3>Peso</h3>

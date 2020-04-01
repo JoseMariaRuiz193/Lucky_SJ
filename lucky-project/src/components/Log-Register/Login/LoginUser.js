@@ -10,8 +10,8 @@ export default function Login() {
     <div className="content">
 
       <div className="logo-container">
-        <Link to='/home'>
-          <img className="logo-lucky" src={logoLucky} />
+        <Link to='/inicio'>
+          <img className="logo-lucky" src={logoLucky}  alt='logo de aplicación' />
         </Link>
       </div>
 
@@ -23,12 +23,12 @@ export default function Login() {
 
         <div className="input-container">
           <input type="text" className="data-form" id="user" placeholder="Usuario"/>
-            <img className="check" src={check} />
+            <img className="check" src={check}  alt='logo confirmado'/>
         </div>
 
         <div className="input-container">
           <input type="text" className="data-form" id="password" placeholder="Contraseña"/>
-            <img className="check" src={ojo} />
+            <img className="check" src={ojo} alt='logo confirmado'/>
         </div>
 
         <Link to='/registro/recuperar-contraseña' className='forget-pass'><p>¿Has olvidado tu contraseña?</p></Link>

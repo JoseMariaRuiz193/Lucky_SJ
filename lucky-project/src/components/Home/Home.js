@@ -30,7 +30,7 @@ export default function Home () {
           <div>
           <div className='slide-container'>
             <Link to = '/' className='slide-container'>
-            <img className='slide-animal' src={slidePerro}/>
+            <img className='slide-animal' src={slidePerro} alt='slider de animal'/>
             </Link>
           </div>
           </div>
@@ -38,7 +38,7 @@ export default function Home () {
           <div>
           <div className='slide-container'>
           <Link to='/' className='slide-container'>
-            <img className='slide-animal' src={slideApadrina}/>
+            <img className='slide-animal' src={slideApadrina} alt='slider de animal'/>
           </Link>
           </div>
           </div>
@@ -46,7 +46,7 @@ export default function Home () {
           <div>
           <div className='slide-container'>
           <Link to='/' className='slide-container'>
-            <img className='slide-animal' src={slideProtectoras}/>
+            <img className='slide-animal' src={slideProtectoras} alt='slider de animal'/>
           </Link>
           </div>
           </div>

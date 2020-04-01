@@ -27,7 +27,7 @@ export default function OnBoarding() {
       <Slider {...settings}>
         <div>
         <div className="onBoarding-Container" >
-          <img className="imgOB" src={imgOB1}/>
+          <img className="imgOB" src={imgOB1}  alt='imagen tutorial'/>
           <h3 className="titleOB">Encuentra todo tipo de servicios que tienes cerca de ti</h3>
           <p className='textOB'></p>
         </div>
@@ -35,7 +35,7 @@ export default function OnBoarding() {
 
         <div>
         <div className="onBoarding-Container">
-          <img className="imgOB" src={imgOB2}/>
+          <img className="imgOB" src={imgOB2} alt='imagen tutorial'/>
           <h3 className="titleOB">Adopta desde tu móvil</h3>
           <p className='textOB'>Puedes acceder al perfil de muchos animales que están en adopción y filtrarlos para encontrar el que mejor se adapte a ti</p>
         </div>
@@ -43,7 +43,7 @@ export default function OnBoarding() {
 
         <div>
         <div className="onBoarding-Container">
-          <img className="imgOB" src={imgOB3}/>
+          <img className="imgOB" src={imgOB3} alt='imagen tutorial'/>
           <h3 className="titleOB">Si eres una asociación sube a tus peludos para darles más difusión</h3>
           <p className='textOB'></p>
         </div>

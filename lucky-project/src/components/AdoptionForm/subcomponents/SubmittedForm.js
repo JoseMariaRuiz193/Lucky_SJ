@@ -20,7 +20,7 @@ export default function SubmittedForm () {
             Recuerda que la protectora se pondrá en contacto contigo para poder hacer la entrevista personal.
             </p>
             
-            <img src={formImg}/>
+            <img src={formImg} alt=''/>
         </div>
     </div>
     )

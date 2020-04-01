@@ -32,7 +32,7 @@ export default function AdoptionPage () {
                     <div>
                     <div className='icons-container'>
                     <Link to = '/' className='icons-container'>
-                    <img className='ico-animal' src={apolo}/>
+                    <img className='ico-animal' src={apolo} alt=''/>
                     </Link>
                     </div>
                     </div>
@@ -40,7 +40,7 @@ export default function AdoptionPage () {
                     <div>
                     <div className='icons-container'>
                     <Link to = '/' className='icons-container'>
-                    <img className='ico-animal' src={dali}/>
+                    <img className='ico-animal' src={dali} alt=''/>
                     </Link>
                     </div>
                     </div>
@@ -48,7 +48,7 @@ export default function AdoptionPage () {
                     <div>
                     <div className='icons-container'>
                     <Link to = '/' className='icons-container'>
-                    <img className='ico-animal' src={kiko}/>
+                    <img className='ico-animal' src={kiko} alt=''/>
                     </Link>
                     </div>
                     </div>

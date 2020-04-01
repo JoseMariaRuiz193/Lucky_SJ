@@ -21,7 +21,7 @@ export default function Menu() {
                     </li>
 
                     <li className="menu-ico">
-                    <NavLink to='/perfil' activeClassName='active'><img src={profileIco}/></NavLink>
+                    <NavLink to='/perfil' activeClassName='active'><img src={profileIco} alt='icono de perfil de usuario'/></NavLink>
                     </li>
                     
                     <li className="menu-ico">

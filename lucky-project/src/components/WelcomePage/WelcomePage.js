@@ -11,8 +11,8 @@ export default function WelcomePage(){
         <section className="content">
         <Link to='/tutorial'>
         <div className="welcome-container">         
-            <img className="logo" src={logo}/>
-            <img  className="lucky" src={lucky}/>
+            <img className="logo" src={logo} alt='logo de la aplicación'/>
+            <img  className="lucky" src={lucky}  alt='logo de la aplicación'/>
         </div>
         </Link>
 

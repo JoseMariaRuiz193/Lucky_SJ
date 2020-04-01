@@ -1,4 +1,5 @@
 @import '../App.scss';
+@import '../styles/generic/icomoon/style.scss';
 
 // Hojas de estilo de AnimalProfile
 
@@ -13,7 +14,6 @@
     top: 6.3%;
     z-index: 3;
     position: absolute;
-
 }
 .name-animal-container{
     display: flex;
@@ -110,6 +110,7 @@ nav{
     font-weight: 600;
     border-bottom: 2pt solid $lightSalmon;
     text-decoration: none;
+    color: $ocean;
 }
 
 // Estilos de datos
@@ -119,7 +120,7 @@ nav{
     flex-direction: column;
     width: 91.5%;
     height: 40%;
-    margin-bottom: 3.6vh; 
+    margin-bottom: 3.6vh;
 }
 
 .data-container{
@@ -127,7 +128,8 @@ nav{
     flex-direction: row;
     width: 100%;
     align-items: center;
-    margin-bottom: 2vh; 
+    margin-bottom: 2vh;
+    border: 0px;
 }
 .text-container{
     display: flex;
@@ -141,6 +143,7 @@ nav{
     font-weight: 400;
     text-align: left;
     color: $black;
+    border: none;
 }
 .text-container p{
     padding: 0;

@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../../styles/AdoptionPage.scss';
 import filters from '../../../assets/icons_svg/filtros.svg';
-import dogImg from '../../../assets/img/user/uli-1-copy-2@3x.png';
+import blue from '../../../assets/img/animals/maxresdefault@3x.png';
+import { Link } from 'react-router-dom';
 
 export default function UserPets () {
 
@@ -20,20 +21,23 @@ export default function UserPets () {
 
             <div className='filter-container'>
                 <h2>Animales en adopción</h2>
-                <img src={filters}/>
+                <img src={filters} alt=''/>
             </div>
 
             <div className='animals-container'>
 
+                <Link to='/perfil-animal'>
                 <div className='animal-profile'>
                     <div className='img-wrap'>
-                        <img className='bbdd-img' src={dogImg}/>
+                        <img className='bbdd-img' src={blue} alt=''/>
                     </div>
                     <div className='bbdd-text'>
-                        <h2>Simba</h2>
+                        <h2>Blue</h2>
                         <p>Madrid</p>
                     </div>
                 </div>
+                </Link>
+                
             </div>
 
            </div>

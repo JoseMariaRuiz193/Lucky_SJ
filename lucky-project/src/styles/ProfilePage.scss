@@ -13,7 +13,7 @@
   margin-top: 11vh;
   margin-bottom: 3.6vh;
 }
-.data-container {
+.user-data-container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -23,7 +23,7 @@
   border-radius: 4pt;
   margin-bottom: 3.6vh;
 }
-.data-container h2{
+.user-data-container h2{
   width: 85%;
   text-align: left;
   font-size: 1.6rem;
@@ -35,6 +35,6 @@
   padding-left: 3%;
 }
 .adelante-arrow{
-  width: 2.3%;
+  width: 6.4vw;
   justify-content: right;
 }
