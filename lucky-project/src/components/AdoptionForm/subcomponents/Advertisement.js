@@ -18,7 +18,7 @@ export default function Advertisement () {
                 Por éste motivo es importante que veas el siguiente vídeo donde 
                 te explicamos como va a ser todo el proceso de adopción
                 </p>
-                <img className='advertisement-video' src={video}/>
+                <img className='advertisement-video' src={video} alt=""/>
                 <h2 className='advertisement-subtitle'>¿Quieres continuar con el proceso de adopción?</h2>
 
                 <div className='advertisement-btn-container'>

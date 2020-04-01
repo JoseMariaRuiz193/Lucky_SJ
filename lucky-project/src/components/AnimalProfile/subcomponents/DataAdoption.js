@@ -14,9 +14,9 @@ export default function DataAdoption () {
         
             <div className='btn-atras-container'><Link to='/filtros'><span className='icon-atras'/></Link></div>
             
-            <img className='img-filters' src={loro}/>
+            <img className='img-filters' src={loro}  alt='foto de animal'/>
             <div className='name-animal-container'>
-                <img src={sexIco}/>
+                <img src={sexIco} alt='simbolo del sexo del animal'/>
                     <div className='name-animal'>
                     <h3>Blue</h3>
                     <p>Madrid</p>

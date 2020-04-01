@@ -15,21 +15,21 @@ export default function Notices (){
 
     <div className='single-notice'>
         <div className='img-wrap'>
-            <img className='notice-image' src={chinchillas}/>
+            <img className='notice-image' src={chinchillas} alt='imagen de noticias'/>
         </div>
         <p className='text-notice'>10 curiosidades sobre las chinchillas</p>
     </div>
     
     <div className='single-notice'>
         <div className='img-wrap'>
-            <img className='notice-image' src={iguana}/>
+            <img className='notice-image' src={iguana} alt='imagen de noticias'/>
         </div>
         <p className='text-notice'>¿Sabes qué comen las iguanas?</p>
     </div>
 
     <div className='single-notice'>
         <div className='img-wrap'>
-            <img className='notice-image' src={dog}/>
+            <img className='notice-image' src={dog} alt='imagen de noticias'/>
         </div>
         <p className='text-notice'>10 lugares para visitar con tu perro en Madrid</p>
     </div>

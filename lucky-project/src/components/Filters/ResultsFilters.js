@@ -20,7 +20,7 @@ export default function ResultsFilters () {
         <div className='content'>
 
             <div className='filter-search-container'>
-                <img src={flecha} className='back-btn'/>
+                <img src={flecha} className='back-btn' alt='botón de retroceder'/>
 
                 <div className='search-container'>
                 <input type='text' className='search-filters' placeholder='Buscar'/>

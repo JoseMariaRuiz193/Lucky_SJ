@@ -1,4 +1,4 @@
-import React, { Profiler } from 'react';
+import React from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import WelcomePage from '../../components/WelcomePage/WelcomePage';
@@ -16,7 +16,7 @@ import ResultsFilters from '../Filters/ResultsFilters';
 import DataPage from '../AnimalProfile/DataPage';
 import DataAdoption from '../AnimalProfile/subcomponents/DataAdoption';
 import DataHealth from '../AnimalProfile/subcomponents/DataHealth';
-import ProfilePage from '../AdoptionPage/ProfilePage/ProfilePage';
+import ProfilePage from '../ProfilePage/ProfilePage';
 import MorePage from '../MorePage/MorePage';
 
 
@@ -48,12 +48,12 @@ export default function Routes (){
 
             
 
-            {/** Rutas para probar componentes */}
+            {/** Rutas para componentes*/}
             
             <Route exact path='/form' component={SubmittedForm}/>
             <Route exact path='/advertencia' component={Advertisement}/>
             <Route exact path='/filtros' component={ResultsFilters}/>
-            <Route exact path='/perfil-animal-datos' component={DataPage}/>
+            <Route exact path='/perfil-animal' component={DataPage}/>
             <Route exact path='/perfil-animal-salud' component={DataHealth}/>
             <Route exact path='/perfil-animal-adopcion' component={DataAdoption}/>
 
