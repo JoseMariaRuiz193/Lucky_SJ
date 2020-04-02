@@ -198,7 +198,7 @@ var controller = {
         } else {
 
             var animalId = req.params.id;
-            Animal.findByIdAndUpdate({ _id: animalId }, { image: file_name }, { new: true }, (err, animalUpdated) => {
+            Animal.findByIdAndUpdate({ _id: animalId }, { image: file_path }, { new: true }, (err, animalUpdated) => {
 
                 if (err || !animalUpdated) {
                     return res.status(200).send({
@@ -238,7 +238,6 @@ var controller = {
 
                 }
                 return res.status(200).send({
-                    status: 'success',
                     animals
                 });
 

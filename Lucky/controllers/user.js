@@ -127,7 +127,7 @@ var controller = {
         } else {
            
             var userId = req.params.id;
-            User.findByIdAndUpdate({ _id: userId }, { image: file_name }, { new: true }, (err, userUpdate) => {
+            User.findByIdAndUpdate({ _id: userId }, { image: file_path }, { new: true }, (err, userUpdate) => {
 
                 if (err || !userUpdate) {
                     return res.status(200).send({
