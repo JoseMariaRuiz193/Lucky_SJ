@@ -24,6 +24,5 @@ export default function Advertisement () {
                     <input id='continuar' type='button' value='Continuar'/>
                 </div>
             </div>
-
     )
 }
