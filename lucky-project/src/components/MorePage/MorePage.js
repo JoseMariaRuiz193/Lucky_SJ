@@ -7,7 +7,7 @@ import MoreData from './subcomponents/MoreData';
 export default function MorePage () {
 
     return(
-        <div className='content'>
+        <div>
             <MoreData/>
             <Menu/>
         </div>

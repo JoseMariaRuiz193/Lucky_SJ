@@ -6,7 +6,10 @@ export default function SearchBar () {
 
     return(
         <div className='content'>
-                <input className='search' type='search' placeholder='Buscar'/>
+            <div className='searchbar-container'>
+                <input type='search' className='search-box' placeholder='Buscar'/>
+                <span className='icon-buscar'/>
+            </div>
         </div>
     )
 }

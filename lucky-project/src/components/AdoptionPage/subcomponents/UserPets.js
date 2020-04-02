@@ -34,11 +34,7 @@ export default function UserPets () {
                 
             </div>
 
-            <div className='animals-container'>
-
             <AnimalsAdoptionList adoptionAnimals={adoptionAnimals}/>
-                
-            </div>
 
            </div>
         </div>

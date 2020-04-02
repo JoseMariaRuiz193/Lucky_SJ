@@ -67,8 +67,6 @@ export default function Register(){
                 <img className='check' src={ojo} alt='logo confirmado'/>
                 </div>
                 </div>
-
-                <Link to='/registro/recuperar-contraseña' className = 'forget-pass'>¿Has olvidado tu contraseña?</Link>
             </div>
                 <input type='button' className= 'btn-create-user' value='Crear cuenta'/>
         </div>

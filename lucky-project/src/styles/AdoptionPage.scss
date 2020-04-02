@@ -3,17 +3,27 @@
 // Hoja de estilos de Perfil
 
 // Barra de búsqueda
-.search{
+
+.searchbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 90%;
-  height: 4.2%;
-  font-size: 2rem;
-  text-align: left;
+  height: 4.2vh;
+  margin-top: 5.4vh;
   margin-bottom: 4.6vh;
+  border: 2px solid $cloudyBlue;
+  border-radius: 15pt;
+}
+.search-box{
+  width: 80%;
+  font-size: 1.2rem;
+  text-align: left;
 }
 
 // Estilos del carrusel de iconos
 
-.icons-container{
+.icons-container {
   width: 100%;
   height: 11.3%;
   display: flex;
@@ -22,21 +32,21 @@
   padding-bottom: 2%;
   margin-top: 5%;
 }
-.ico-animal{
+.ico-animal {
   width: 19.2%;
   border-radius: 8pt;
 
-  -webkit-box-shadow: 0px 4px 9px 2px rgba(1,116,142,0.7); 
-  box-shadow: 0px 4px 9px 2px rgba(1,116,142,0.7);
+  -webkit-box-shadow: 0px 4px 9px 2px rgba(1, 116, 142, 0.7);
+  box-shadow: 0px 4px 9px 2px rgba(1, 116, 142, 0.7);
 }
-.slider{
+.slider {
   width: 89%;
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   margin-bottom: 2%;
 }
-.slider h2{
+.slider h2 {
   padding: 0px;
   margin: 0px;
   font-size: 1.6rem;
@@ -44,7 +54,7 @@
   color: $ocean;
   margin-bottom: 2%;
 }
-.slider p{
+.slider p {
   padding: 0px;
   margin: 0px;
   font-size: 1.2rem;
@@ -89,46 +99,45 @@
   color: $ocean;
   margin-right: 40%;
 }
-.filter-container img{
+.filter-container img {
   width: 5vw;
 }
-.animals-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 2.5%;
-    margin-bottom: 10%;
-    width: 89%;
-    height: 38%;
-    border: 2px solid $cloudyBlue;
-    border-radius: 8px;    
+.animals-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 2.5%;
+  margin-bottom: 10%;
+  width: 89%;
+  height: 38%;
+  border: 2px solid $cloudyBlue;
+  border-radius: 8px;
 }
 .animal-profile {
-    width: 100%;
-    height: 32.5%;
+  width: 100%;
+  height: 32.5%;
 }
-.img-wrap{
-    width: 100%;
-    overflow: hidden;
+.img-wrap {
+  width: 100%;
+  overflow: hidden;
 }
 .bbdd-text {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.bbdd-img{
+.bbdd-img {
   width: 100%;
 }
 .bbdd-text h2 {
-    font-size: 2.5rem;
-    color: $ocean;
-    text-align: left;
-    margin-right: 50%;
+  font-size: 2rem;
+  color: $ocean;
+  text-align: left;
+  margin-right: 50%;
 }
-.bbdd-text p{
-    font-size: 1.2rem;
-    text-align: right;
+.bbdd-text p {
+  font-size: 1.2rem;
+  text-align: right;
 }
-

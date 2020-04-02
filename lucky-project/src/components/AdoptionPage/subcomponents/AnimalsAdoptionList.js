@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../../styles/AdoptionPage.scss';
 
 export default function AnimalsAdoptionList (props) {
     
     const animals = [];
     for(let i = 0; i < props.adoptionAnimals.length; i++){
         const animal = props.adoptionAnimals[i];
+        console.log(animal.image)
         animals.push(
+        <div key={i} className='animals-container'>
+        
             <Link to='/perfil-animal'>
             <div className='animal-profile'>
                 <div className='img-wrap'>
@@ -18,6 +22,7 @@ export default function AnimalsAdoptionList (props) {
                 </div>
             </div>
             </Link>
+        </div>
         )
     }
 

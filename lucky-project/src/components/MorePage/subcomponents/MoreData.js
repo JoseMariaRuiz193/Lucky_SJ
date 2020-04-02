@@ -11,12 +11,9 @@ import { Link } from 'react-router-dom';
 
 export default function MoreData () {
 
-    return(
-
-
-        <div className='content'>
-        
-        <div className='margin-corrector'></div>
+    return(  
+   <div className='margin-corrector'>
+      <div className='content'>   
         
         <div className='more-data-container '>
             <img className='data-ico' src={chica} alt='icono'/>
@@ -48,8 +45,11 @@ export default function MoreData () {
             <img className='adelante-arrow' src={adelante} alt='icono'/>
         </div>
 
-        <Link to='login-usuario'><input type='button' className='login-btn' value='Iniciar Sesión'/></Link>
-        
+        <Link to='/login-usuario'>
+            <input type='button' className='login-btn-more' value='Iniciar Sesión'/>
+        </Link>
+
+        </div>
     </div>
     )
 }
