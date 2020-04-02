@@ -37,7 +37,6 @@ var controller = {
                     });
                 }
                 return res.status(200).send({
-                    status: 'Confirmado!',
                     user: userStored
                 });
             });
@@ -59,7 +58,6 @@ var controller = {
                 });
             }
             return res.status(200).send({
-                message: 'Confirmado, usuario borrado!',
                 user: userDeleted
             });
         });
@@ -94,7 +92,6 @@ var controller = {
                     });
                 }
                 return res.status(200).send({
-                    message: 'Confirmado, usuario modificado!!',
                     user: userChanged
                 });
             });
@@ -139,7 +136,6 @@ var controller = {
                     });
                 }
                 return res.status(200).send({
-                    status: 'success',
                     user: userUpdate
                 });
             });

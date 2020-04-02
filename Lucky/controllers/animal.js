@@ -65,7 +65,6 @@ var controller = {
                     });
                 }
                 return res.status(200).send({
-                    status: 'Confirmado!',
                     animal: animalStored
                 });
             });
@@ -86,7 +85,6 @@ var controller = {
                 });
             }
             return res.status(200).send({
-                message: 'Confirmado, animal borrado!',
                 animal: animalDeleted
             });
         });
@@ -137,7 +135,6 @@ var controller = {
                     });
                 }
                 return res.status(200).send({
-                    message: 'Confirmado, animal modificado!!',
                     animal: animalChanged
                 });
             });
@@ -172,7 +169,6 @@ var controller = {
                 });
             }
             return res.status(200).send({
-                status: 'Novedades...',
                 animals
             });
         });
@@ -211,7 +207,6 @@ var controller = {
                     });
                 }
                 return res.status(200).send({
-                    status: 'success',
                     animal: animalUpdated
                 });
             });
@@ -274,7 +269,6 @@ var controller = {
 
                 }
                 return res.status(200).send({
-                    status: 'success',
                     animals
                 });
 
