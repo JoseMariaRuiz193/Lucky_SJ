@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import '../../../styles/AdoptionPage.scss';
-import filters from '../../../assets/icons_svg/filtros.svg';
 import blue from '../../../assets/img/animals/maxresdefault@3x.png';
 import { Link } from 'react-router-dom';
+import AnimalsAdoptionList from './AnimalsAdoptionList';
 
 export default function UserPets () {
+
+    const[adoptionAnimals, setAdoptionAnimals] = useState([]);
+
+    useEffect(() => {
+        axios.get(`http://localhost:2020/lucky-db/animals`)
+        .then(res => {
+            setAdoptionAnimals(res.data.animals);
+        })
+        .catch( err => {
+            console.log('Error de conexión con base de datos');
+        });
+    }, [])
 
     return(
         <div className='content'>
@@ -12,19 +25,19 @@ export default function UserPets () {
         
         {/* Aquí deberemos modificar y añadir la flecha y ponerla en color salmón */}
 
-            <select className='status'>
-                <option selected disabled>Estado de la adopción</option>
-                <option>En Adopción</option>
-                <option>En Proceso</option>
-                <option>Rechazado</option>
-            </select>
+            <input type='button' className='status' value='Estado de la adopción'/>
+
+
 
             <div className='filter-container'>
                 <h2>Animales en adopción</h2>
-                <img src={filters} alt=''/>
+                <Link to= '/filtros'><span className='icon-filtros'/></Link>
+                
             </div>
 
             <div className='animals-container'>
+
+            <AnimalsAdoptionList adoptionAnimals={adoptionAnimals}/>
 
                 <Link to='/perfil-animal'>
                 <div className='animal-profile'>

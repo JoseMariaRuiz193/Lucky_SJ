@@ -8,7 +8,6 @@ import imgOB2 from '../../assets/img/on_boarding/imagen2.svg';
 import imgOB3 from '../../assets/img/on_boarding/undrawPetAdoption2Qkw.svg';
 import CloseButton from './subcomponents/CloseButton';
 
-
 export default function OnBoarding() {
 
     var settings = {

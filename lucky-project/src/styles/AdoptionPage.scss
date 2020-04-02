@@ -71,6 +71,8 @@
   padding: 2%;
   font-size: 1.6rem;
   font-weight: 400;
+  border-radius: 4pt;
+  background-color: white;
 }
 .filter-container {
   margin-top: 5.5%;
@@ -99,9 +101,7 @@
     width: 89%;
     height: 38%;
     border: 2px solid $cloudyBlue;
-    border-radius: 8px;
-
-    
+    border-radius: 8px;    
 }
 .animal-profile {
     width: 100%;

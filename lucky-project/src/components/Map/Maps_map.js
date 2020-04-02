@@ -9,6 +9,8 @@ export default function Maps_map () {
             <div className='bar-container'>
                 <input type='search' placeholder='¿Que estás buscando?'/>
             </div>
+            
+            <span className='icon-filtros '/>
 
             <div className='map-container'>
                 <MapSimple/>
