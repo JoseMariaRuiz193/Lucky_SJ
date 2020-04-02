@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../../../styles/AdoptionPage.scss';
-import blue from '../../../assets/img/animals/maxresdefault@3x.png';
 import { Link } from 'react-router-dom';
 import AnimalsAdoptionList from './AnimalsAdoptionList';
 
@@ -38,18 +37,6 @@ export default function UserPets () {
             <div className='animals-container'>
 
             <AnimalsAdoptionList adoptionAnimals={adoptionAnimals}/>
-
-                <Link to='/perfil-animal'>
-                <div className='animal-profile'>
-                    <div className='img-wrap'>
-                        <img className='bbdd-img' src={blue} alt=''/>
-                    </div>
-                    <div className='bbdd-text'>
-                        <h2>Blue</h2>
-                        <p>Madrid</p>
-                    </div>
-                </div>
-                </Link>
                 
             </div>
 
