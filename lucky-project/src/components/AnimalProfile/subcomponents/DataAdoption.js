@@ -12,7 +12,7 @@ export default function DataAdoption () {
 
             {/** Encabezado superior con foto del animal */}
         
-            <div className='btn-atras-container'><Link to='/filtros'><span className='icon-atras'/></Link></div>
+            <div className='btn-atras-container'><Link to='/adopcion'><span className='icon-atras'/></Link></div>
             
             <img className='img-filters' src={loro}  alt='foto de animal'/>
             <div className='name-animal-container'>

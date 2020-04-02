@@ -6,7 +6,7 @@ function MapSimple (props) {
     const mapStyles = { width: '100%', height: '100%'};
 
       // Podremos buscar veterinarios, protectoras y peluquerías caninas.
-{/** var vets = [{name: 'Las Musas Clínica Veterinaria', lat: 40.427552, lng: -3.60923449999996}];*/}
+
 
     return( 
 

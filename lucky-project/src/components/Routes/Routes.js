@@ -11,7 +11,6 @@ import AdoptionPage from '../AdoptionPage/AdoptionPage';
 import SelectLogin from '../Log-Register/SelectLogin';
 import Maps_map from '../Map/Maps_map';
 import SubmittedForm from '../AdoptionForm/subcomponents/SubmittedForm';
-import Advertisement from '../AdoptionForm/subcomponents/Advertisement';
 import ResultsFilters from '../Filters/ResultsFilters';
 import DataPage from '../AnimalProfile/DataPage';
 import DataAdoption from '../AnimalProfile/subcomponents/DataAdoption';
@@ -51,7 +50,6 @@ export default function Routes (){
             {/** Rutas para componentes*/}
             
             <Route exact path='/form' component={SubmittedForm}/>
-            <Route exact path='/advertencia' component={Advertisement}/>
             <Route exact path='/filtros' component={ResultsFilters}/>
             <Route exact path='/perfil-animal' component={DataPage}/>
             <Route exact path='/perfil-animal-salud' component={DataHealth}/>

@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom';
 import sexIco from '../../assets/icons_svg/male.svg';
 import pawPrint from '../../assets/img/data/pawprint@3x.png';
 
+
 export default function DataPage () {
 
     return(
-        <div className='content'>
+
+    <div className='content'>
 
             {/** Encabezado superior con foto del animal */}
         
@@ -92,7 +94,7 @@ export default function DataPage () {
 
             {/** Botones para interactuar */}
 
-            <input className='btn-adopt' type='button' value='Adoptar'/>
+            <input id='adoptar-btn' className='btn-adopt' type='button' value='Adoptar'/>
 
         </div>
     )

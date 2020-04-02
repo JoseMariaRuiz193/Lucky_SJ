@@ -7,7 +7,7 @@ export default function CloseButton() {
     <div className="btn-close-container">
       <div className="correct-margin"></div>
       <Link to='/login' id="btn-close" className="btn-close">
-        <img clasName="btn-close" src={closeButton} alt='botón cerrar' />
+        <img src={closeButton} alt='botón cerrar' />
       </Link>
     </div>
   );
