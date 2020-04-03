@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../../styles/ResultsFilters.scss';
 
-
 export default function Animals(props) {
 
     const animalList = [];

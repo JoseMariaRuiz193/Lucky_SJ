@@ -5,7 +5,6 @@ import flecha from '../../assets/icons_svg/atras.svg';
 import Animals from './subcomponents/animals';
 import { Link } from 'react-router-dom';
 
-
 export default function ResultsFilters () {
 
     const [animals, setAnimals] = useState([

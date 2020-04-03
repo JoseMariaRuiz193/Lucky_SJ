@@ -72,18 +72,30 @@
   align-items: center;
   margin-top: 10%;
 }
-.status {
+.status{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 3.6vh;
   width: 94%;
   height: 50px;
   border: 1px solid $cloudyBlue;
+
+}
+.status-input-AP{
+  width: 85%;
+  height: 90%;
   color: $ocean;
   padding: 2%;
+  text-align: left;
   font-size: 1.6rem;
   font-weight: 400;
   border-radius: 4pt;
+  border: 0;
   background-color: white;
 }
+
 .filter-container {
   margin-top: 5.5%;
   width: 100%;
@@ -138,6 +150,6 @@
   margin-right: 50%;
 }
 .bbdd-text p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: right;
 }

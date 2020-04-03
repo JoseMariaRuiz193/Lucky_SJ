@@ -7,7 +7,6 @@ export default function AnimalsAdoptionList (props) {
     const animals = [];
     for(let i = 0; i < props.adoptionAnimals.length; i++){
         const animal = props.adoptionAnimals[i];
-        console.log(animal.image)
         animals.push(
         <div key={i} className='animals-container'>
         

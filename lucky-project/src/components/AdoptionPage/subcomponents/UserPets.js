@@ -3,6 +3,7 @@ import axios from 'axios';
 import '../../../styles/AdoptionPage.scss';
 import { Link } from 'react-router-dom';
 import AnimalsAdoptionList from './AnimalsAdoptionList';
+import adelante from '../../../assets/icons_svg/adelante.svg';
 
 export default function UserPets () {
 
@@ -23,8 +24,11 @@ export default function UserPets () {
         <div className='pets-container'>
         
         {/* Aquí deberemos modificar y añadir la flecha y ponerla en color salmón */}
-
-            <input type='button' className='status' value='Estado de la adopción'/>
+        <div className='status'>
+            <input type='button' className='status-input-AP' value='Estado de la adopción'/>
+            <img className='adelante-arrow' src={adelante} alt='icono'/>
+        </div>
+            
 
 
 
