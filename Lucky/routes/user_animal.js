@@ -21,6 +21,8 @@ router.get('/animals/:last?', AnimalController.getAnimals);
 router.post('/upload-image/animal/:id', md_uploadanimals, AnimalController.upload);
 router.get('/search/:search', AnimalController.search);
 router.get('/filtros/:filters', AnimalController.filters);
+router.get('/animals/status/:status', AnimalController.status);
+
 
 
 module.exports = router;

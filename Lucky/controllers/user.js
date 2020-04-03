@@ -117,7 +117,7 @@ var controller = {
         var extension_split = file_name.split('\.');
         var file_ext = extension_split[1];
         if (file_ext != 'png' && file_ext != 'jpg' && file_ext != 'jpeg' && file_ext != 'gif') {
-         
+
             fs.unlink(file_path, (err) => {
                 return res.status(200).send({
                     status: 'error',
@@ -125,7 +125,7 @@ var controller = {
                 });
             });
         } else {
-           
+
             var userId = req.params.id;
             User.findByIdAndUpdate({ _id: userId }, { image: file_path }, { new: true }, (err, userUpdate) => {
 
@@ -141,6 +141,41 @@ var controller = {
             });
         }
     },
+  /*  login: (req, res) => {
+        var params = req.body;
+        var userEmail = req.params.email;
+        var userPassword = req.params.password;
+        try {
+            var validate_email = !validator.isEmpty(params.email);
+            var validate_password = !validator.isEmpty(params.password);
+        } catch (error) {
+            return res.status(404).send({
+                status: 'error',
+                message: 'Faltan datos'
+            });
+        }
+        if (validate_email && validate_password) {
+            User.find({ email: userEmail }, { password: userPassword })
+                .exec((err, user) => {
+                    if (err) {
+                        return res.status(404).send({
+                            status: 'error',
+                            message: 'Error en la peticion'
+                        });
+                    }
+                    if (!user || user.length <= 0) {
+                        return res.status(404).send({
+                            status: 'error',
+                            message: 'No estas registrado!!'
+                        });
+                    }
+                    return res.status(200).send({
+                        user
+                    });
+                });
+            }
+        }
+    }*/
 }
 
 module.exports = controller;

@@ -4,7 +4,7 @@ var path = require('path');
 var Animal = require('../Estructura/animal');
 
 var controller = {
-    
+
     save: (req, res) => {
         var params = req.body;
         try {
@@ -155,7 +155,7 @@ var controller = {
 
         }
         query.sort('-_id').exec((err, animals) => {
-            
+
             if (err) {
                 return res.status(500).send({
                     status: 'error',
@@ -272,8 +272,33 @@ var controller = {
                 });
 
             })
+    },
+
+    status: (req, res) => {
+        var animalStatus = req.params.status;
+        Animal.find({ status: animalStatus }).sort([['date', 'descending']])
+            .exec((err, animals) => {
+                if (err) {
+                    return res.status(500).send({
+                        status: 'error',
+                        message: 'Error en la peticion'
+                    });
+
+                }
+                if (!animals || animals.length <= 0) {
+                    return res.status(404).send({
+                        status: 'error',
+                        message: 'No hay animales que coincidan con tu busqueda!!'
+                    });
+
+                }
+                return res.status(200).send({
+                    animals
+                });
+            });
+        }
     }
 
-};
 
-module.exports = controller;
+
+    module.exports = controller;
