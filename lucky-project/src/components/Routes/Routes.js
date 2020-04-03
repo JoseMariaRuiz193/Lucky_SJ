@@ -17,6 +17,7 @@ import DataAdoption from '../AnimalProfile/subcomponents/DataAdoption';
 import DataHealth from '../AnimalProfile/subcomponents/DataHealth';
 import ProfilePage from '../ProfilePage/ProfilePage';
 import MorePage from '../MorePage/MorePage';
+import AdoptionStatus from '../AdoptionStatus/AdoptionStatus';
 
 
 export default function Routes (){
@@ -43,6 +44,7 @@ export default function Routes (){
             <Route exact path = '/login-usuario' component={Login}/>
             <Route exact path = '/registro' component={Register}/>
             <Route exact path = '/registro/recuperar-contraseña' component={RecoverPass}/>
+            <Route exact path = '/estado-adopcion' component={AdoptionStatus}/>
             
 
             

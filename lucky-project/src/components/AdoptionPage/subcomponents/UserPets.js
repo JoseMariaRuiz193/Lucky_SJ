@@ -24,9 +24,11 @@ export default function UserPets () {
         <div className='pets-container'>
         
         {/* Aquí deberemos modificar y añadir la flecha y ponerla en color salmón */}
-        <div className='status'>
+        <div>
+        <Link to='estado-adopcion' className='status'>
             <input type='button' className='status-input-AP' value='Estado de la adopción'/>
             <img className='adelante-arrow' src={adelante} alt='icono'/>
+        </Link>
         </div>
             
 

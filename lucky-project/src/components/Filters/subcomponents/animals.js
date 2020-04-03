@@ -7,7 +7,9 @@ export default function Animals(props) {
 
     for(let i = 0; i < props.animals.length; i++){
        const animal = props.animals[i];
-       const animalFoto = `http://localhost:2020/${animal.image}`
+       const animalFoto = `http://localhost:2020/${animal.image}`;
+       const name = animal.name.replace(/\b\w/g, l => l.toUpperCase());
+       const city = animal.city.replace(/\b\w/g, l => l.toUpperCase());
        animalList.push(
            <div key={i} className='animals-container-filters'>
                  <div className='animal-profile-filters'>
@@ -15,8 +17,8 @@ export default function Animals(props) {
                         <img className='bbdd-img-filters' src={animalFoto} alt=''/>
                     </div>
                     <div className='bbdd-text-filters'>
-                        <h2>{animal.name}</h2>
-                        <p>{animal.city}</p>
+                        <h2>{name}</h2>
+                        <p>{city}</p>
                     </div>
                 </div>
            </div>
