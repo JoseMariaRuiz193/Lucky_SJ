@@ -22,6 +22,9 @@ app.use((req, res, next) => {
 
 app.use('/api', user_routes);
 
+// Hacemos públicas las imágenes 
 
+app.use("/upload/animals", express.static("upload/animals"));
+app.use("/upload/users", express.static("upload/users"));
 
 module.exports = app;

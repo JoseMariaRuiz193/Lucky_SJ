@@ -1,24 +1,36 @@
 @import "../App.scss";
 
 // Hoja de estilos de Home
+
 .title-container {
   width: 100vw;
-  height: 13.5vh;
+  height: 10.5vh;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: left;
   margin-top: 8.7%;
-  
+  margin-bottom: 4.7vh;
+}
+.logo-home{
+  width: 43.7vw;
+  align-self: center;
+  padding: 0;
+  margin: 0;
 }
 .helloName {
   padding: 0px;
+  margin: 0;
   font-size: 2.5rem;
   color: $ocean;
   font-weight: 600;
   text-align: left;
   padding-left: 6.5vw;
+  margin-top: 10%;
+  justify-self: flex-end;
 }
 
 // Clases de Carrusel
+
 .slide-container{
   width: 100vw;
   display: flex;
@@ -34,6 +46,7 @@
 }
 
 // Clases de Noticias
+
 .notices {
   display: flex;
   flex-direction: column;

@@ -9,7 +9,6 @@ import slidePerro from '../../assets/img/slides_home/perro.png';
 import slideApadrina from '../../assets/img/slides_home/apadrina.png';
 import slideProtectoras from '../../assets/img/slides_home/protectoras.png';
 
-
 export default function Home () {
 
     var settings = {
