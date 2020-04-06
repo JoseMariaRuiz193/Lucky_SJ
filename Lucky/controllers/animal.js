@@ -75,20 +75,7 @@ var controller = {
             });
         }
     },
-    delete: (req, res) => {
-        var animalId = req.params.id;
-        Animal.findByIdAndDelete({ _id: animalId }, (err, animalDeleted) => {
-            if (err || !animalDeleted) {
-                return res.status(404).sen({
-                    status: 'error',
-                    message: 'Error al borrar animal'
-                });
-            }
-            return res.status(200).send({
-                animal: animalDeleted
-            });
-        });
-    },
+ 
     update: (req, res) => {
         var animalId = req.params.id;
         var params = req.body;
@@ -212,6 +199,34 @@ var controller = {
             });
         }
     },
+    delete: (req, res) => {
+        var animalId = req.params.id;
+        Animal.findByIdAndDelete({ _id: animalId }, (err, animalDeleted) => {
+            if (err || !animalDeleted) {
+                return res.status(404).sen({
+                    status: 'error',
+                    message: 'Error al borrar animal'
+                });
+            }
+            return res.status(200).send({
+                animal: animalDeleted
+            });
+        });
+    },
+    animalSearch: (req, res) => {
+        var animalId = req.params.id;
+        Animal.find({ _id: animalId }, (err, animal) => {
+            if (err || !animal) {
+                return res.status(404).send({
+                    status: 'error',
+                    message: 'Error al obtener animal'
+                });
+            }
+            return res.status(200).send({
+                animal: animal
+            });
+        });
+    },
     search: (req, res) => {
         var searchString = req.params.search;
         Animal.find({
@@ -271,7 +286,7 @@ var controller = {
                     animals
                 });
 
-            })
+            });
     },
 
     status: (req, res) => {

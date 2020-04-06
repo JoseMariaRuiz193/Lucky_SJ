@@ -16,12 +16,14 @@ router.post('/upload-image/:id', md_uploadusers, UserController.upload);
 
 router.post('/save/animal', AnimalController.save);
 router.delete('/animal/:id', AnimalController.delete);
-router.put('/animal/:id', AnimalController.update);
+router.put('/animal-update/:id', AnimalController.update);
 router.get('/animals/:last?', AnimalController.getAnimals);
 router.post('/upload-image/animal/:id', md_uploadanimals, AnimalController.upload);
 router.get('/search/:search', AnimalController.search);
 router.get('/filtros/:filters', AnimalController.filters);
 router.get('/animals/status/:status', AnimalController.status);
+router.get('/animal/:id', AnimalController.animalSearch);
+
 
 
 
