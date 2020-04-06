@@ -18,8 +18,10 @@ export default function StatusList (props) {
                 <div className='status-animal-container'>
                     <div className='status-text-container'>
                         <h3>Adopción de {name}</h3>
-                        <p className='text-inprocess'>En proceso </p>
-                        <span className='circle-inprogress'/>
+
+                            <p className='text-inprocess'>En proceso</p>
+                            <span className='circle-inprogress'/>
+
                     </div>
                     <div className='status-img-data-container'>
 
@@ -28,20 +30,62 @@ export default function StatusList (props) {
                         </div>
 
                         <div className='text-container-status'>
-                            <p><strong>Nombre </strong>{name}</p>
-                            <p><strong>Ciudad </strong>{city}</p>
-                            <p><strong>Sexo </strong>{sex}</p>
+                            <span className='statements'>
+                                <p><strong>Nombre</strong></p>
+                                <p><strong>Ciudad</strong></p>
+                                <p><strong>Sexo</strong></p>
+                            </span>
+
+                            <span>
+                                <p>{name}</p>
+                                <p>{city}</p>
+                                <p>{sex}</p>
+                            </span>
+
                         </div>
                     </div>
                 </div>
+            );
+        } else {
+            if(animal.status === 'rechazado'){
+                animalsRejected.push(
+                    <div className='status-animal-container'>
+                    <div className='status-text-container'>
+                        <h3>Adopción de {name}</h3>
+                        <p className='text-rejected'>Rechazado </p>
+                        <span className='circle-rejected'/>
+                    </div>
+                    <div className='status-img-data-container'>
 
-            )
+                        <div className='status-photo-wrap'>
+                        <img src={animalFoto} alt=''/>
+                        </div>
+
+                        <div className='text-container-status'>
+                        <span className='statements'>
+
+                                <p><strong>Nombre</strong></p>
+                                <p><strong>Ciudad</strong></p>
+                                <p><strong>Sexo</strong></p>
+                            </span>
+
+                            <span>
+                                <p>{name}</p>
+                                <p>{city}</p>
+                                <p>{sex}</p>
+                            </span>
+                            
+                        </div>
+                    </div>
+                </div>
+                )
+            }
         }
     }
     return(
         <div className='content'>
             {animalsInProccess}
-
+            {animalsRejected}
         </div>
     )
 }

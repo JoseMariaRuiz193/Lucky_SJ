@@ -1,33 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import '../../../styles/AdoptionPage.scss';
+import { Link } from 'react-router-dom';
 
 export default function AnimalsAdoptionList (props) {
-    
-    const animals = [];
 
+    const[id, setId] = useState();
+
+    const animals = [];
     for(let i = 0; i < props.adoptionAnimals.length; i++){
         const animal = props.adoptionAnimals[i];
         const name = animal.name.replace(/\b\w/g, l => l.toUpperCase());
         const city = animal.city.replace(/\b\w/g, l => l.toUpperCase());
-        const animalImage = `http://localhost:2020/${animal.image}`
+        const animalImage = `http://localhost:2020/${animal.image}`;
+
         animals.push(
-        <div key={i} className='animals-container'>
-        
-            <Link to='/perfil-animal'>
-            <div className='animal-profile'>
-                <div className='img-wrap'>
-                    <img className='bbdd-img' src={animalImage} alt=''/>
+            <div key={animal._id} className='animals-container' onClick={getId}>
+                <Link to={`/perfil-animal/${animal._id}`}>
+                <div className='animal-profile'>
+                    <div className='img-wrap'>
+                        <img className='bbdd-img' src={animalImage} alt=''/>
+                    </div>
+                    <div className='bbdd-text'>
+                        <h2>{name}</h2>
+                        <p>{city}</p>
+                    </div>
                 </div>
-                <div className='bbdd-text'>
-                    <h2>{name}</h2>
-                    <p>{city}</p>
-                </div>
-            </div>
-            </Link>
+                </Link>   
         </div>
         )
-    }
+        function getId(){
+            setId(animal._id)
+        }
+        console.log(id)
+    };
 
     return(
         <div className='content'>
