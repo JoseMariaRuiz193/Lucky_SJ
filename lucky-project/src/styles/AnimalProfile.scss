@@ -1,206 +1,310 @@
-@import '../App.scss';
-@import '../styles/generic/icomoon/style.scss';
+@import "../App.scss";
 
-// Hojas de estilo de AnimalProfile
+// Hoa de estilos de AnimalPerfil
 
-// Estilos de DataProfile 
+// Contenedor de la imagen
 
 .btn-atras-container{
-    width: 100%;
-    align-items: flex-start;
+  width: 100%;
+  align-items: flex-start;
 }
 .icon-atras{
-    margin-left: 8vw;
-    top: 6.3%;
-    z-index: 3;
-    position: absolute;
+  margin-left: 8vw;
+  top: 6.3%;
+  z-index: 3;
+  position: absolute;
 }
-.name-animal-container{
+.AP-img-container {
+  width: 100%;
+}
+.img-AP {
+  width: 100%;
+}
+// Banner flotante con datos
+
+.data-banner-AP {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 60%;
+  height: 8.8vh;
+  top: 23vh;
+  background-color: white;
+  border-radius: 4pt;
+  position: absolute;
+  z-index: 2;
+}
+.sex-ico-AP {
+  margin-left: 7%;
+  margin-right: 4%;
+  width: 5.5vw;
+  height: 5.5vh;
+}
+.data-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 4% 0 4%;
+}
+.data-container h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $black;
+}
+.data-container p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  color: $black;
+}
+// Botones y contenedor de datos
+
+.AP-buttons-container {
+  margin-top: 7.5vh;
+
+  width: 100%;
+}
+.btn-AP-data {
+  padding: 0;
+  margin: 0;
+
+  width: 33%;
+  height: 7.4%;
+  font-size: 1.6rem;
+  color: $greyishBrown;
+}
+.btn-AP-data-active{
+  color: $ocean;
+  border-bottom: 2pt solid $lightSalmon;
+}
+.AP-animal-data-container {
+  width: 91.4%;
+  margin-top: 3vh;
+  margin-bottom: 3.6vh;
+}
+
+// Contenedor de Historia del animal
+
+.AP-story-container {
+  width: 94.6%;
+  height: auto;
+  border: 1pt solid #01748e20;
+  border-radius: 4pt;
+  text-align: left;
+}
+.AP-story-container h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $ocean;
+  padding: 2% 1.7% 0 1.7%;
+}
+.AP-story-container p {
+  font-size: 1.6rem;
+  color: $black;
+  padding: 0 1.7% 0 1.7%;
+}
+
+// Botón de adopción del animal
+
+.adopt-AP-btn {
+  width: 28%;
+  height: 5.2vh;
+  font-size: 1.6rem;
+  background-color: $lightSalmon;
+  border-radius: 4pt;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5vh;
+  border: 0;
+}
+
+// Estilos de datos cargados de BBDD
+
+.margin-correct-DA{
+  padding: 0;
+  margin: 0;
+}
+
+.data-container-DA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.ico-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: flex-start;
+  width: 94.6%;
+
+  margin-bottom: 2vh;
+}
+.ico-text-container img {
+  width: 5.8%;
+  padding-right: 3%;
+}
+.text-container-DA {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 88.5%;
+}
+.text-container-DA p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+  color: $black;
+}
+.data-container-AA{
+  display: flex;
+  flex-direction: column;
+  width: 94.5%;
+  height: 10%;
+  border-radius: 4pt;
+  border: 1pt solid #01748e20;
+  margin-bottom: 3.6vh;
+}
+.data-container-AA h3{
+  padding: 2%;
+  margin: 0 0 2% 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $ocean;
+}
+.data-container-AA p{
+  padding: 2%;
+  margin: 0 0 5% 0;
+  font-size: 1.6rem;
+  color: $black;
+}
+
+// Estilos de Advertisement
+
+.correct-margin{
+  padding: 0;
+  margin: 0;
+
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floating-box{
+  position: absolute;
+  z-index: 3;
+  background-color: #bdd2d6d3;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-color{
+  width: 100%;
+  height: 100%;
+  background-color: #bdd2d6ad;
+}
+
+.advertisement-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: left;
-    width: 60%;
-    height: 8.8vh;
-    top: 23vh;
-    background-color: white;
-    border-radius: 4pt;
-    position: absolute;
-    z-index: 2;
-}
-.name-animal{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-.name-animal h3{
-
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: $black;
-}
-.name-animal p{
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem;
-    color: $black;
-}
-.name-animal-container img{
-    margin-left: 7%;
-    margin-right: 4%;
-    width: 5.5vw;
-    height: 5.5vh;
-}
-.img-filters{
-    width: 100vw;
-    z-index: 1;
-}
-
-// Estilos de Datos de Adopcion
-
-.box-data{
-    display: flex;
-    flex-direction: column;
-    width: 94.5%;
-    height: 10%;
-    border-radius: 4pt;
-    border: 1pt solid #01748e20;
-    margin-bottom: 3.6vh;
-}
-.box-data h3{
-    padding: 2%;
-    margin: 0 0 2% 0;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: $ocean;
-}
-.box-data p{
-    padding: 2%;
-    margin: 0 0 5% 0;
-    font-size: 1.6rem;
-    color: $black;
-}
-
-// Estilos del navegador
-
-nav{
     margin-top: 7.5vh;
-    width: 100vw;
-    display: flex;
+    width: 84vw;
+    height: 65%;
+    background-color: white;
+    border-radius: 12pt;
 }
-.nav-animal{
-    margin-left: 0%;
-    margin-bottom: 2.7vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-.data-results{
-    width: 33vw;
-    text-align: center;
-    font-size: 1.6rem;
-    color: $greyishBrown;
-}
-.active{
-    font-weight: 600;
-    border-bottom: 2pt solid $lightSalmon;
-    text-decoration: none;
+.advertisement-title{
+    width: 75%;
+    font-size: 2.5rem;
+    font-weight: 500;
     color: $ocean;
+    margin-bottom: 4.3%;
 }
-
-// Estilos de datos
-
-.general-data{
-    display: flex;
-    flex-direction: column;
-    width: 91.5%;
-    height: 40%;
-    margin-bottom: 3.6vh;
+.advertisement-container p{
+    width: 75%;
+    font-size: 1.6rem;
+    text-align: center;
+    color: $black;
+    margin-bottom: 5.8%;
 }
-
-.data-container{
+.advertisement-video{
+    width: 75%;
+    margin-bottom: 5.8%;
+}
+.advertisement-subtitle{
+    width: 75%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: $ocean;
+    margin-bottom: 3vh;
+}
+.advertisement-btn-container{
     display: flex;
     flex-direction: row;
-    width: 100%;
     align-items: center;
-    margin-bottom: 2vh;
+    width: 100%;
+    height: 28%;
+    border-top: 1px solid $cloudyBlue;
+}
+.advertisement-btn-container input{
+    width: 50%;
+    border-radius: 0pt;
+    background: none;
     border: 0px;
 }
-.text-container{
-    display: flex;
-    flex-direction: row;
-    width: 86.5%;
-    height: 5.5%;
-    justify-content: space-between;
-}
-.text-container h3{
+#continuar{
+    padding: 3%;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
     font-size: 1.6rem;
-    font-weight: 400;
-    text-align: left;
-    color: $black;
-    border: none;
+    text-align: center;
+    text-justify: distribute;
+    color: $pineGreen;
+    opacity: 50%; 
+    border-radius: 0 0 12pt 0;
 }
-.text-container p{
-    padding: 0;
-    margin: 0;
-    font-size: 1.6rem;
-    color: $black;
-    text-align: right;
-}
-.data-container img{
-    width: 5.5%;
-    height: 5.5%;
-    margin-right: 2vw;
-}
-
-// Contenedor de historia de animal e imput
-
-.animal-story-container{
-    width: 94.6%;
-    height: auto;
-    border: 1pt solid #01748e20;
-    border-radius: 4pt;
-    text-align: left;
-}
-.animal-story-container h2{
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: $ocean;
-    padding: 0 1.7% 0 1.7%;
-}
-.animal-story-container p{
-    font-size: 1.6rem;
-    color: $black;
-    padding: 0 1.7% 0 1.7%;
-}
-.btn-adopt{
-    width: 28%;
-    height: 5.2vh;
-    font-size: 1.6rem;
-    background-color: $lightSalmon;
-    border-radius: 4pt;
+#continuar:hover{
     color: white;
-    margin-top: 5%;
-    margin-bottom: 5vh;
-    border: 0;
+    background-color: $ocean;
 }
-
-// POPUP
-
-.container-bg{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
-    background-color: #bdd2d6d8;
-    width: 100vw;
-    height: 100vh;
+.continue-link{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 50%;
+  font-size: 1.6rem;
+  text-align: center;
+  text-justify: distribute;
+  color: $pineGreen;
+  opacity: 50%; 
+  border-radius: 0 0 12pt 0;
 }
-
-
+#cancelar{
+    padding: 3%;
+    margin: 0%;
+    height: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    text-justify: distribute;
+    color: $lightSalmon;
+    border-right: 1px solid $cloudyBlue;
+    border-radius: 0 0 0 12pt;
+}
+#cancelar:hover{
+  color: white;
+  background-color: $lightSalmon;
+}

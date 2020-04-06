@@ -10,6 +10,7 @@ import dali from '../../assets/img/user/Dali.png';
 import kiko from '../../assets/img/user/Kiko.png';
 
 export default function AdoptionPage () {
+
     var settings = {
         dots: true,
         infinite: false,

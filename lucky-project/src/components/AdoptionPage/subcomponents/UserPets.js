@@ -17,8 +17,8 @@ export default function UserPets () {
         .catch( err => {
             console.log('Error de conexión con base de datos');
         });
-    }, [])
-
+    }, []);
+    
     return(
         <div className='content'>
         <div className='pets-container'>

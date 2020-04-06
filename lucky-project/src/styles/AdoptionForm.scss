@@ -2,6 +2,218 @@
 
 // Hoja de estilos AdoptionForm
 
+.btn-atras-container-AF{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 2vh;
+    align-items: flex-start;
+}
+
+.btn-continue-AF {
+  width: 89%;
+  height: 6vh;
+  background-color: $lightSalmon;
+  border: 0;
+  border-radius: 4pt;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 4.3vh;
+  margin-bottom: 3.9vh;
+}
+
+// Estilos YourData
+
+.component-form {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.title-container-AF {
+  margin-top: 6.4%;
+  margin-bottom: 4.8vh;
+
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.title-container-AF p {
+  width: 100%;
+  font-size: 1.6rem;
+  color: $black;
+  text-align: center;
+  margin-bottom: 4.5vh;
+  font-weight: 400;
+}
+.progress {
+  width: 88%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.progress-bar-AF {
+  display: block;
+  width: 26%;
+  height: 7pt;
+  background-color: $lightSalmon;
+  border-radius: 3.5pt 0 0 3.5pt;
+}
+.remaining-progress-AF {
+  display: block;
+  width: 74.2%;
+  height: 7pt;
+  background-color: #fa9c93b0;
+  border-radius: 0 3.5pt 3.5pt 0;
+}
+.form-container-AF {
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+}
+.form-container-AF h3 {
+  width: 100%;
+  font-size: 2rem;
+  color: $ocean;
+  font-weight: 600;
+  margin-bottom: 8%;
+}
+.input-container-AF {
+  width: 89%;
+  height: 2.7vh;
+  border-bottom: 1pt solid $cloudyBlue;
+  margin-bottom: 3.6vh;
+}
+.input-form-AF {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  width: 100%;
+  height: 80%;
+  font-size: 1.2rem;
+  color: $greyishBrown;
+}
+.terms-container-AF {
+  width: 89%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.terms-container-AF p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  color: $black;
+}
+.checkbox-AF {
+}
+
+// Estilos AboutPets
+
+.progress-bar-AP {
+  display: block;
+  width: 50%;
+  height: 7pt;
+  background-color: $lightSalmon;
+  border-radius: 3.5pt 0 0 3.5pt;
+}
+.remaining-progress-AP {
+  display: block;
+  width: 50%;
+  height: 7pt;
+  background-color: #fa9c93b0;
+  border-radius: 0 3.5pt 3.5pt 0;
+}
+
+.other-animals-AP {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3.6vh;
+}
+.other-animals-AP h3{
+  padding: 0;
+  margin: 0;
+
+  margin-right: 24%;
+  font-size: 1.6rem;
+  color: $black;
+  font-weight: 400;
+}
+.other-animals-AP p{
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  color: $black;
+
+}
+.radio-container-AP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-left: 7%;
+}
+.title-input-AP{
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  color: $black;
+  margin-bottom: 2%;
+  margin-bottom: 2vh;
+}
+.input-container-AP{
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  height: 2.7vh;
+  border-bottom: 1pt solid $cloudyBlue;
+  margin-bottom: 3.6vh;
+}
+.input-container-AP-2{
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  height: 8vh;
+  border-bottom: 1pt solid $cloudyBlue;
+  margin-bottom: 3.6vh;
+}
+.input-form-AP {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  width: 100%;
+  height: 80%;
+  font-size: 1.2rem;
+  color: $greyishBrown;
+}
+
+// Estilos de FamilyHome
+
+.progress-bar-FH {
+  display: block;
+  width: 100%;
+  height: 7pt;
+  background-color: $lightSalmon;
+  border-radius: 3.5pt;
+}
+.remaining-progress-FH {
+  display: block;
+  width: 0;
+  height: 7pt;
+  background-color: #fa9c93b0;
+  border-radius: 0 3.5pt 3.5pt 0;
+}
+
+
 // Estilos SubmittedForm
 
 .pop-up-container {
@@ -26,7 +238,7 @@
   color: $pineGreen;
 }
 .pop-up-container h2 {
-    width: 33.3%;
+  width: 33.3%;
   font-size: 2.5rem;
   font-weight: 500;
   color: $pineGreen;
@@ -45,92 +257,3 @@
   width: 51%;
 }
 
-// Estilos de Advertisement
-
-.change-color{
-  width: 100%;
-  height: 100%;
-  background-color: #bdd2d6ad;
-}
-
-.advertisement-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // margin-top: 7.5vh;
-    width: 84vw;
-    height: 65%;
-    background-color: white;
-    border-radius: 12pt;
-}
-.advertisement-title{
-    width: 75%;
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: $ocean;
-    margin-bottom: 4.3%;
-}
-.advertisement-container p{
-    width: 75%;
-    font-size: 1.6rem;
-    text-align: center;
-    color: $black;
-    margin-bottom: 5.8%;
-}
-.advertisement-video{
-    width: 75%;
-    margin-bottom: 5.8%;
-}
-.advertisement-subtitle{
-    width: 75%;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-    color: $ocean;
-    margin-bottom: 3%;
-}
-.advertisement-btn-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 28%;
-    border-top: 1px solid $cloudyBlue;
-}
-.advertisement-btn-container input{
-    width: 50%;
-    border-radius: 0pt;
-    background: none;
-    border: 0px;
-}
-#continuar{
-    padding: 3%;
-    margin: 0%;
-    height: 100%;
-    font-size: 1.6rem;
-    text-align: center;
-    text-justify: distribute;
-    color: $pineGreen;
-    opacity: 50%; 
-    border-radius: 0 0 12pt 0;
-}
-#continuar:hover{
-    color: white;
-    background-color: $ocean;
-}
-#cancelar{
-    padding: 3%;
-    margin: 0%;
-    height: 100%;
-    font-size: 1.6rem;
-    text-align: center;
-    text-justify: distribute;
-    color: $lightSalmon;
-    border-right: 1px solid $cloudyBlue;
-    border-radius: 0 0 0 12pt;
-}
-#cancelar:hover{
-  color: white;
-  background-color: $lightSalmon;
-}

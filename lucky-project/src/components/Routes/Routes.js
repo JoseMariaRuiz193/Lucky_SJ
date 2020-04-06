@@ -12,12 +12,12 @@ import SelectLogin from '../Log-Register/SelectLogin';
 import Maps_map from '../Map/Maps_map';
 import SubmittedForm from '../AdoptionForm/subcomponents/SubmittedForm';
 import ResultsFilters from '../Filters/ResultsFilters';
-import DataPage from '../AnimalProfile/DataPage';
-import DataAdoption from '../AnimalProfile/subcomponents/DataAdoption';
-import DataHealth from '../AnimalProfile/subcomponents/DataHealth';
 import ProfilePage from '../ProfilePage/ProfilePage';
 import MorePage from '../MorePage/MorePage';
 import AdoptionStatus from '../AdoptionStatus/AdoptionStatus';
+import AnimalProfile from '../AnimalProfile/AnimalProfile';
+import AdoptionForm from '../AdoptionForm/AdoptionForm';
+
 
 
 export default function Routes (){
@@ -45,18 +45,13 @@ export default function Routes (){
             <Route exact path = '/registro' component={Register}/>
             <Route exact path = '/registro/recuperar-contraseña' component={RecoverPass}/>
             <Route exact path = '/estado-adopcion' component={AdoptionStatus}/>
-            
+            <Route exact path = '/form' component={SubmittedForm}/>
+            <Route exact path = '/filtros' component={ResultsFilters}/>
+            <Route exact path = '/perfil-animal/:id' component={AnimalProfile}/>
+            <Route exact path = '/formulario-adopcion' component={AdoptionForm}/>
 
-            
-
-            {/** Rutas para componentes*/}
-            
-            <Route exact path='/form' component={SubmittedForm}/>
-            <Route exact path='/filtros' component={ResultsFilters}/>
-            <Route exact path='/perfil-animal' component={DataPage}/>
-            <Route exact path='/perfil-animal-salud' component={DataHealth}/>
-            <Route exact path='/perfil-animal-adopcion' component={DataAdoption}/>
-
+            {/** Rutas para pruebas*/}
+        
         </Switch>
     
         </BrowserRouter>
