@@ -4,14 +4,10 @@ export default function YourData (){
 
     return(
     <div className='component-form'>
-        <div className='title-container-AF'>
-        <p>Formulario de adopción</p>
             <div className='progress'>
                 <span className='progress-bar-AF'/>
                 <span className='remaining-progress-AF'/>
             </div>
-        </div>
-
         <div className='form-container-AF'>
             
         <h3>Tus datos</h3>

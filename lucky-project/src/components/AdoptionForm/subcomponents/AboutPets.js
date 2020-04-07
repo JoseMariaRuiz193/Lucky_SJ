@@ -4,19 +4,12 @@ import '../../../styles/AdoptionForm.scss';
 export default function AboutPets () {
     
     return(
-    <div>
-    <div className='title-container-AF'>
-
-        <div className='btn-atras-container-AF'>
-            <button className='icon-atras'/>
-        </div>
-
-        <p>Formulario de adopción</p>
+    <div className='component-form'>
             <div className='progress'>
                 <span className='progress-bar-AP'/>
                 <span className='remaining-progress-AP'/>
             </div>
-    </div>
+
     <div className='component-form'>
 
         <div className='form-container-AF'>

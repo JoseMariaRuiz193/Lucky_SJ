@@ -277,7 +277,7 @@
     opacity: 50%; 
     border-radius: 0 0 12pt 0;
 }
-#continuar:hover{
+#continuar:active{
     color: white;
     background-color: $ocean;
 }
@@ -304,7 +304,7 @@
     border-right: 1px solid $cloudyBlue;
     border-radius: 0 0 0 12pt;
 }
-#cancelar:hover{
+#cancelar:active{
   color: white;
   background-color: $lightSalmon;
 }

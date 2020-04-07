@@ -5,43 +5,40 @@ import DataAnimal from './subcomponents/DataAnimal';
 import HealthAnimal from './subcomponents/HealthAnimal';
 import AdoptionAnimal from './subcomponents/AdoptionAnimal';
 
-import loro from '../../assets/img/animals/maxresdefault@3x.png';
-import sexIco from '../../assets/icons_svg/male.svg';
+import maleIco from '../../assets/icons_svg/male.svg';
+import femaleIco from '../../assets/icons_svg/female.svg';
 import Advertisement from './subcomponents/Advertisement';
 import Axios from 'axios';
 
-export default function AnimalProfile (props) {
-
-    const initialComponent = <DataAnimal/>
+export default function AnimalProfile () {
 
     const {id} = useParams();
 
-    const [component, setComponent] = useState(initialComponent);
+    
     const [advertisement, setadvertisement] = useState(false);
-    const [animals, setAnimals] = useState([]);
-
-    const animal = [];
-
-    // Recorremos el Array de Animales para encontrar el animal pasado por parametro.
+    const [animal, setAnimal] = useState({});
 
     useEffect(() => {
         getAnimal();
-    }, []);
+    });
 
-    // Recorremos el Array para encontrar el animal que buscamos
+    const dataAnimal = <DataAnimal animal={animal}/>
+    const healthAnimal = <HealthAnimal animal={animal}/>
+    const adoptionAnimal = <AdoptionAnimal animal={animal}/>
+    const [component, setComponent] = useState(dataAnimal);
 
-    console.log(animals)
 
     // Función para llamar a los animales de la BBDD
 
     function getAnimal(){
-        Axios.get(`http://localhost:2020/lucky-db/animals/${id}`)
+        Axios.get(`http://localhost:2020/lucky-db/animal/${id}`)
             .then(res => {
-                setAnimals(res.data.animals);
+               setAnimal(res.data.animal[0]);
             }).catch(err => {
-                console.log('Ha ocurrido un error de conexión')
+                console.log('Ha ocurrido un error de conexión');
             });
     };
+
 
     // Función para mostrar el componente POPUP
     
@@ -56,6 +53,17 @@ export default function AnimalProfile (props) {
         }
     };
 
+    // Pasamos a primera Inicial a mayúscula y llamamos a la imagen de nuestro NODE
+
+    const animalImage = `http://localhost:2020/${animal.image}`;
+    const sexIco = [];
+
+    if(animal.sex === 'male'){
+        sexIco.push(maleIco);
+    } else {
+        sexIco.push(femaleIco);
+    }
+
     return(
         <div className='content'>
                
@@ -66,22 +74,22 @@ export default function AnimalProfile (props) {
             </div>
             
             <div className='AP-img-container'>
-                <img className='img-AP' alt=''/>
+                <img src={animalImage} className='img-AP' alt=''/>
             </div>
 
             <div className='data-banner-AP'>
                 <img src={sexIco} className='sex-ico-AP' alt=''/>
                 <div className='data-container'>
-                    <h3></h3>
-                    <p></p>
+                    <h3>{animal.name}</h3>
+                    <p>{animal.city}</p>
                 </div>
 
             </div>
 
             <div className='AP-buttons-container'>
-                <button className='btn-AP-data' onClick={() => changeComponent(<DataAnimal/>)}>Datos</button>
-                <button className='btn-AP-data' onClick={() => changeComponent(<HealthAnimal/>)}>Salud</button>
-                <button className='btn-AP-data' onClick={() => changeComponent(<AdoptionAnimal/>)} >Adopción</button>
+                <button className='btn-AP-data' onClick={() => changeComponent(dataAnimal)}>Datos</button>
+                <button className='btn-AP-data' onClick={() => changeComponent(healthAnimal)}>Salud</button>
+                <button className='btn-AP-data' onClick={() => changeComponent(adoptionAnimal)} >Adopción</button>
             </div>
 
             <div className='AP-animal-data-container'>
@@ -91,9 +99,7 @@ export default function AnimalProfile (props) {
             <div className='AP-story-container'>
                 <h3>Historia</h3>
                 <p>
-                Me llamo Blue, era un pajarito muy bueno, pero ví cosas que no debería 
-                haber visto, que no debían de haber pasado. Por eso llamaron a LARA y vino 
-                a salvarnos la vida
+                {animal.history}
                 </p>
             </div>
             <input type='button' className='adopt-AP-btn' value='Adoptar' onClick={() => showPopUp(<Advertisement/>)}/>
