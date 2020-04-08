@@ -4,6 +4,7 @@ import video from '../../../assets/img/advertencia/group5.svg';
 import { Link } from 'react-router-dom';
 
 export default function Advertisement() {
+
     const [popUp, setPopUp] = useState(
     <div className='floating-box'>
         <div className='advertisement-container'>
@@ -30,11 +31,14 @@ export default function Advertisement() {
     </div>
     );
 
+    // Ralentizar la acción al pulsar el botón onclick
+    
     function closePopUp (popUp) {
         if(popUp !== false){
-            setPopUp(false);
+           setPopUp(false);
         }
     };
+
 
     return(
         <div className='correct-margin'>
