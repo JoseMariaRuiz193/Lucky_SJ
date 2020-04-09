@@ -20,9 +20,10 @@ export default function AnimalProfile () {
 
     useEffect(() => {
         getAnimal();
-    });
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
 
-    const dataAnimal = <DataAnimal animal={animal}/>
+    const dataAnimal = <DataAnimal id={id}/>
     const healthAnimal = <HealthAnimal animal={animal}/>
     const adoptionAnimal = <AdoptionAnimal animal={animal}/>
     const [component, setComponent] = useState(dataAnimal);
@@ -58,6 +59,15 @@ export default function AnimalProfile () {
     const animalImage = `http://localhost:2020/${animal.image}`;
     const sexIco = [];
 
+    function capitilice(word){
+        if(typeof word !== 'string') return ''
+        return word.charAt(0).toLocaleUpperCase() + word.slice(1);
+    }
+
+    const name = capitilice(animal.name);
+    const city = capitilice(animal.city);
+    const story = capitilice(animal.history);
+
     if(animal.sex === 'male'){
         sexIco.push(maleIco);
     } else {
@@ -80,16 +90,16 @@ export default function AnimalProfile () {
             <div className='data-banner-AP'>
                 <img src={sexIco} className='sex-ico-AP' alt=''/>
                 <div className='data-container'>
-                    <h3>{animal.name}</h3>
-                    <p>{animal.city}</p>
+                    <h3>{name}</h3>
+                    <p>{city}</p>
                 </div>
 
             </div>
 
             <div className='AP-buttons-container'>
-                <button className='btn-AP-data' onClick={() => changeComponent(dataAnimal)}>Datos</button>
-                <button className='btn-AP-data' onClick={() => changeComponent(healthAnimal)}>Salud</button>
-                <button className='btn-AP-data' onClick={() => changeComponent(adoptionAnimal)} >Adopción</button>
+                <button id='btn-data' className='btn-AP-data' onClick={() => changeComponent(dataAnimal)}>Datos</button>
+                <button id='btn-data'  className='btn-AP-data' onClick={() => changeComponent(healthAnimal)}>Salud</button>
+                <button id='btn-data'  className='btn-AP-data' onClick={() => changeComponent(adoptionAnimal)} >Adopción</button>
             </div>
 
             <div className='AP-animal-data-container'>
@@ -99,7 +109,7 @@ export default function AnimalProfile () {
             <div className='AP-story-container'>
                 <h3>Historia</h3>
                 <p>
-                {animal.history}
+                {story}
                 </p>
             </div>
             <input type='button' className='adopt-AP-btn' value='Adoptar' onClick={() => showPopUp(<Advertisement/>)}/>

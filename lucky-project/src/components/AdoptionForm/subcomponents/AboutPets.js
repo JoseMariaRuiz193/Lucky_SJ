@@ -18,13 +18,19 @@ export default function AboutPets () {
 
         <div className='other-animals-AP'>
             <h3>¿Tienes otros animales?</h3>
-                <div className='radio-container-AP'>
-                    <p>Sí</p>
-                    <input type='radio'/>
+
+            <div className='radio-container-AP'>
+                    <p>
+                    <input type='radio' id='visit_yes'/>
+                    <label for='visit_yes'><span></span>Sí</label>
+                    </p>
+                    
                 </div>
                 <div className='radio-container-AP'>
-                    <p>No</p>
-                    <input type='radio'/>
+                    <p>
+                    <input type='radio' id='visit_no'/>
+                    <label for='visit_no'><span></span>No</label>
+                    </p>
                 </div>
         </div>
 

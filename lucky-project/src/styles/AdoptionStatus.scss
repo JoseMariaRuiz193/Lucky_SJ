@@ -47,6 +47,27 @@
     margin-left: 6.25%;
     margin-right: 15%;
 }
+.text-inadoption{
+    padding: 0;
+    margin: 0;
+
+    color: $inAdoption;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.circle-inadoption{
+    padding: 0;
+    margin: 0;
+    margin-right: 6.25%;
+    margin-left: 1.8%;
+
+    width: 3.4vw;
+    height: 3.4vw;
+    border-radius: 50%;
+    background-color: $inAdoption;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
 .text-inprocess{
     padding: 0;
     margin: 0;
@@ -79,11 +100,13 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 .status-photo-wrap img {
-    height: 100%;
+    width: 180%;
 }
 .text-container-status{
     width: 28.8vw;

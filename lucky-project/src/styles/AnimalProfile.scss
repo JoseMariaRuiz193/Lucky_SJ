@@ -77,6 +77,16 @@
   color: $greyishBrown;
 }
 .btn-AP-data-active{
+  padding: 0;
+  margin: 0;
+
+  width: 33%;
+  height: 7.4%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: white;
+  border: none;
+
   color: $ocean;
   border-bottom: 2pt solid $lightSalmon;
 }
@@ -84,6 +94,7 @@
   width: 91.4%;
   margin-top: 3vh;
   margin-bottom: 3.6vh;
+  align-items: center;
 }
 
 // Contenedor de Historia del animal
@@ -126,6 +137,9 @@
 .margin-correct-DA{
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .data-container-DA {
@@ -161,7 +175,10 @@
   font-size: 1.5rem;
   color: $black;
 }
+
 .data-container-AA{
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   width: 94.5%;

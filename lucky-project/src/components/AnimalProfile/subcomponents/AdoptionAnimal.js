@@ -3,9 +3,14 @@ import '../../../styles/AnimalProfile.scss';
 
 export default function AdoptionAnimal (props) {
 
-    const adoptionRequirements = props.animal.adoption_requirements;
-    const adoptionRate = props.animal.adoption_rate + ' €';
-    const shipping = props.animal.shipping;
+    function capitilice(word){
+        if(typeof word !== 'string') return ''
+        return word.charAt(0).toLocaleUpperCase() + word.slice(1);
+    }
+
+    const adoptionRequirements = capitilice(props.animal.adoption_requirements);
+    const adoptionRate = capitilice(props.animal.adoption_rate + ' €');
+    const shipping = capitilice(props.animal.shipping);
     let shippingStatus = '';
 
     if(shipping === 'no'){
