@@ -50,6 +50,7 @@ var controller = {
     },
     delete: (req, res) => {
         var userId = req.params.id;
+
         User.findByIdAndDelete({ _id: userId }, (err, userDeleted) => {
             if (err || !userDeleted) {
                 return res.status(404).send({
@@ -61,6 +62,30 @@ var controller = {
                 user: userDeleted
             });
         });
+    },
+    login: (req, res) => {
+        var userEmail = req.params.email;
+        try {
+            var validate_email = !validator.isEmpty(params.email);
+        } catch (error) {
+            return res.status(400).send({
+                status: 'error',
+                message: 'Faltan datos'
+            });
+        }
+        if (validate_email) {
+            User.find({ email: userEmail }, (err, user) => {
+                if (err || !user) {
+                    return res.status(404).send({
+                        status: 'error',
+                        message: 'Error al obtener usuario'
+                    });
+                }
+                return res.status(200).send({
+                    usuario: user
+                });
+            });
+        }
     },
     update: (req, res) => {
         var userId = req.params.id;
@@ -141,41 +166,45 @@ var controller = {
             });
         }
     },
-  /*  login: (req, res) => {
-        var params = req.body;
-        var userEmail = req.params.email;
-        var userPassword = req.params.password;
-        try {
-            var validate_email = !validator.isEmpty(params.email);
-            var validate_password = !validator.isEmpty(params.password);
-        } catch (error) {
-            return res.status(404).send({
-                status: 'error',
-                message: 'Faltan datos'
-            });
-        }
-        if (validate_email && validate_password) {
-            User.find({ email: userEmail }, { password: userPassword })
-                .exec((err, user) => {
-                    if (err) {
-                        return res.status(404).send({
-                            status: 'error',
-                            message: 'Error en la peticion'
-                        });
-                    }
-                    if (!user || user.length <= 0) {
-                        return res.status(404).send({
-                            status: 'error',
-                            message: 'No estas registrado!!'
-                        });
-                    }
-                    return res.status(200).send({
-                        user
-                    });
-                });
-            }
-        }
-    }*/
+    /*  login: (req, res) => {
+          var params = req.body;
+          var userEmail = req.params.email;
+          var userPassword = req.params.password;
+          try {
+              var validate_email = !validator.isEmpty(params.email);
+              var validate_password = !validator.isEmpty(params.password);
+          } catch (error) {
+              return res.status(404).send({
+                  status: 'error',
+                  message: 'Faltan datos'
+              });
+          }
+          if (validate_email && validate_password) {
+              User.find({ email: userEmail }, { password: userPassword })
+                  .exec((err, user) => {
+                      if (err) {
+                          return res.status(404).send({
+                              status: 'error',
+                              message: 'Error en la peticion'
+                          });
+                      }
+                      if (!user || user.length <= 0) {
+                          return res.status(404).send({
+                              status: 'error',
+                              message: 'No estas registrado!!'
+                          });
+                      }
+                      return res.status(200).send({
+                          user
+                      });
+                  });
+              }
+          }
+      }*/
 }
 
 module.exports = controller;
+
+
+
+
