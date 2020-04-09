@@ -4,12 +4,17 @@ import pawPrint from '../../../assets/img/data/pawprint@3x.png';
 
 export default function HealthAnimal (props) {
 
-    const vaccinated = props.animal.vaccinated;
-    const dewormed = props.animal.dewormed;
-    const healthy = props.animal.healthy;
-    const sterelized = props.animal.sterelized;
-    const identified = props.animal.identified;
-    const microchip = props.animal.microchip;
+    function capitilice(word){
+        if(typeof word !== 'string') return ''
+        return word.charAt(0).toLocaleUpperCase() + word.slice(1);
+    }
+
+    const vaccinated = capitilice(props.animal.vaccinated);
+    const dewormed = capitilice(props.animal.dewormed);
+    const healthy = capitilice(props.animal.healthy);
+    const sterelized = capitilice(props.animal.sterelized);
+    const identified = capitilice(props.animal.identified);
+    const microchip = capitilice(props.animal.microchip);
 
     return(
     <div className='margin-correct-DA'>

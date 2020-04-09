@@ -44,8 +44,12 @@ export default function YourData (){
         </div>
 
         <div className='terms-container-AF'>
-            <input type='checkbox' className='checkbox-AF'/>
-            <p>Acepto los términos y condiciones de la adopción</p>
+            
+            <p>
+            <input id='checkbox-AF' type='checkbox'/>
+            <label for='checkbox-AF'><span></span>Acepto los términos y condiciones de la adopción</label>
+            </p>
+            
         </div>
         
     </div>

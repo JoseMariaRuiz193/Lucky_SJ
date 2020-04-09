@@ -6,15 +6,20 @@ export default function AnimalsAdoptionList (props) {
 
     const[id, setId] = useState();
 
+    function capitilice(word){
+        if(typeof word !== 'string') return ''
+        return word.charAt(0).toLocaleUpperCase() + word.slice(1);
+    }
+
     const animals = [];
     for(let i = 0; i < props.adoptionAnimals.length; i++){
         const animal = props.adoptionAnimals[i];
-        const name = animal.name.replace(/\b\w/g, l => l.toUpperCase());
-        const city = animal.city.replace(/\b\w/g, l => l.toUpperCase());
+        const name = capitilice(animal.name);
+        const city = capitilice(animal.city);
         const animalImage = `http://localhost:2020/${animal.image}`;
 
         animals.push(
-            <div key={animal._id} className='animals-container' onClick={getId}>
+            <div key={i} className='animals-container' onClick={getId}>
                 <Link to={`/perfil-animal/${animal._id}`}>
                 <div className='animal-profile'>
                     <div className='img-wrap'>
@@ -31,8 +36,8 @@ export default function AnimalsAdoptionList (props) {
         function getId(){
             setId(animal._id)
         }
-        console.log(id)
     };
+    console.log(id);
 
     return(
         <div className='content'>
