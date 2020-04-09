@@ -8,7 +8,7 @@ var animalSchema = Schema({
     datos: {
         type: {
             species: { type: String },
-            birthday: { type: Date },
+            birthday: { type: String },
             sex: { type: String },
             size: { type: String },
             weight: { type: String },
@@ -18,19 +18,19 @@ var animalSchema = Schema({
     },
     salud: {
         type: {
-            vaccinated: { type: Boolean },
-            dewormed: { type: Boolean },
-            healthy: { type: Boolean },
-            sterelized: { type: Boolean },
-            identified: { type: Boolean },
-            microchip: { type: Boolean },
+            vaccinated: { type: String },
+            dewormed: { type: String },
+            healthy: { type: String },
+            sterelized: { type: String },
+            identified: { type: String },
+            microchip: { type: String },
         }
     },
     adopcion: {
         type: {
             adoption_requirements: { type: String },
             adoption_rate: { type: String },
-            shipping: { type: Boolean }
+            shipping: { type: String }
         }
     }
 });

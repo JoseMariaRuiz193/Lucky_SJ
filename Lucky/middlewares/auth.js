@@ -1,9 +1,21 @@
 
-var jwt = require('jwt-simple');
-var moment = require('moment');
-var config = require('../config');
+const services = require('../services')
 
 
-function isAuth (req, res, next){
-    if(!req.headers.authorization)
+function isAuth(req, res, next) {
+    if (!req.headers.authorization) {
+        return res.status(403).send({
+            message: 'No tienes autorizacion'
+        });
+    }
+    services.decodeToken(token)
+    .then(response =>{
+        req.user = response
+        next()
+    })
+    .catch(response =>{
+        res.status(response.status)
+    })
 }
+
+module.exports = isAuth

@@ -9,7 +9,7 @@ var userSchema = Schema({
     username: { type: String, unique: true, lowercase: true },
     name: { type: String },
     surname: { type: String },
-    birthday: { type: Date },
+    birthday: { type: String },
     email: { type: String },
     password: { type: String, select: false }/*para no enviar la contraseña al cliente*/
 });

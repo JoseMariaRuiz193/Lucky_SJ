@@ -1,7 +1,8 @@
 
-
+var service = require ('../services');
 var validator = require('validator');
 var User = require('../Estructura/User');
+
 
 var controller = {
 
@@ -201,6 +202,43 @@ var controller = {
               }
           }
       }*/
+
+    signUp(req, res) {
+        const user = new User({
+            username: req.body.username,
+            name: req.body.name,
+            surname: req.body.surname,
+            birthday: req.body.birthday,
+            email: req.body.email,
+        });
+        user.save((err) => {
+            if (err)
+                res.status(404).send({
+                    message: `Error al crear usuario: ${err}`
+                })
+            return res.status(200).send({
+                token: service.createToken(user)
+            });       /*service es una funcion que ayuda a realizar acciones que repitas en el codigo */
+        });
+    },
+
+    signIn(req, res) {
+        User.find({ email: req.body.email }, (err, user) => {
+            if (err)
+                return res.status(500).send({
+                    message: 'Error'
+                });
+            if (!user)
+                return res.status(404).send({
+                    message: 'No existe el usuario'
+                });
+            req.user = user
+            res.status(200).send({
+                message: 'Logueado correctamente',
+                token: service.createToken(user)
+            });
+        });
+    }
 }
 
 module.exports = controller;

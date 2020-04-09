@@ -3,9 +3,9 @@ var UserController = require('../controllers/user');
 var AnimalController = require('../controllers/animal');
 var router = express.Router();
 var multipart = require('connect-multiparty');
-var md_uploadanimals = multipart({uploadDir: './upload/animals'});
-var md_uploadusers = multipart({uploadDir: './upload/users'});
-
+var md_uploadanimals = multipart({ uploadDir: './upload/animals' });
+var md_uploadusers = multipart({ uploadDir: './upload/users' });
+var auth = require('../middlewares/auth')
 
 
 
@@ -25,7 +25,11 @@ router.get('/filtros/:filters', AnimalController.filters);
 router.get('/animals/status/:status', AnimalController.status);
 router.get('/animal/:id', AnimalController.animalSearch);
 
-
+router.get('/private', auth, (res) => {
+    res.status(200).send({
+        message: 'Tienes acceso'
+    });
+});
 
 
 
