@@ -9,11 +9,11 @@ function isAuth(req, res, next) {
         });
     }
     services.decodeToken(token)
-    .then(response =>{
+    .then(response => {
         req.user = response
         next()
     })
-    .catch(response =>{
+    .catch(response => {
         res.status(response.status)
     })
 }

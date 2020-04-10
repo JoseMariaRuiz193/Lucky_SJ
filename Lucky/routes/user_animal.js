@@ -13,7 +13,8 @@ router.post('/save', UserController.save);
 router.delete('/user/:id', UserController.delete);
 router.put('/user/:id', UserController.update);
 router.post('/upload-image/:id', md_uploadusers, UserController.upload);
-router.get('/login', UserController.login);
+router.post('/signup', UserController.signUp);
+router.post('/signin', UserController.signIn);
 
 router.post('/save/animal', AnimalController.save);
 router.delete('/animal/:id', AnimalController.delete);
