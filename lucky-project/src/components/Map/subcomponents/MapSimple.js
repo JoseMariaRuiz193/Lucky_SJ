@@ -1,24 +1,31 @@
 import React from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
+import { Icon } from 'leaflet';
 
-function MapSimple (props) {
+const icon = new Icon({
+  iconUrl: '../../../assets/icons_svg/map_icons/peluquerias.svg',
+  iconSize: [25,25]
+});
 
-    const mapStyles = { width: '100%', height: '80%'};
+
+export default function MapSimple () {
+
+    const position = [40.4165000, -3.7025600];
+
 
       // Podremos buscar veterinarios, protectoras y peluquerías caninas.
 
-
     return(
-    <div className='content'>
-    <div className='map-container'> 
-      <Map google={props.google} zoom={12} style={mapStyles} initialCenter={{ lat: 	40.4165000, lng: -3.7025600}}>
-        <Marker position={{ lat: 40.4165000, lng: -3.7025600}}/>
+    <div className='leaflet-container'> 
+
+      <Map center={position} zoom={17}>
+
+      <TileLayer 
+         url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
+         attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+        />
       </Map>
+
     </div>
-    </div> 
 )
 }
-
-export default GoogleApiWrapper({
-    apiKey: 'AIzaSyDlkz9VhQYBz5pXVADIa2J9oC1j73g14_Y'
-  })(MapSimple);

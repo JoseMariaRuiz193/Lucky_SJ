@@ -9,7 +9,6 @@ export default function Maps_map () {
     <div>
         <SearchBarMaps/>
         <MapSimple/>
-    {/* <submit><img className='search-ico' src={searchIco}/></submit> */} 
         <Menu/>  
     </div>
     )
