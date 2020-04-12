@@ -8,15 +8,57 @@ import flecha from '../../assets/icons_svg/atras.svg';
 export default function AdoptionStatus () {
 
     const[animals, setAnimals] = useState([]);
+    const[filters, setFilters] = useState(false);
+    const[filter, setFilter] = useState(false);
 
     useEffect(() => {
+        getAnimals();
+    },[]);
+
+    const getAnimals = () => {
         Axios.get(`http://localhost:2020/lucky-db/animals`)
             .then((res) => {
                 setAnimals(res.data.animals);
             }).catch((err) => {
                 console.log('Ha ocurrido un error');
             })
-    });
+    }
+
+    const showFilters = () => {
+        if(filters === false){
+            setFilters(
+                <div className='floating-container'>
+                <div className='filter-status-container'>
+                    <h3>Filtros</h3>
+                    <div className='icon-container-FS'>
+                        <button className='completed-btn' alt='icono de búsqueda completado' onClick={getCompleted}/>
+                        <button className='in_process-btn' alt='icono de búsqueda en proceso' onClick={getInProcess}/>
+                        <button className='rejected-btn' alt='icono de búsqueda rechazado' onClick={getRejected}/>
+                    </div>
+                    
+                    <input className='apply-btn-FS' type='button' value='Aplicar' onClick={closeApplyFilter}/>
+                    
+                </div>
+            </div>
+            )
+        } 
+    };
+
+    const getCompleted = () => {
+        setFilter('en adopcion')
+    }
+    const getInProcess = () => {
+        setFilter('en proceso')
+    }
+    const getRejected = () => {
+        setFilter('rechazado')
+    };
+
+    function closeApplyFilter (){
+        if(filters === false){
+            setFilters(false);
+        }
+    };
 
     return(
         <div className='content'>
@@ -31,9 +73,10 @@ export default function AdoptionStatus () {
                     <span className='icon-buscar'/>
                 </div>
                 
-                <span className='icon-filtros '/>
+                <span className='icon-filtros ' onClick={showFilters}/>
             </div>
-            <StatusList animals={animals}/>
+            <StatusList animals={animals} filter={filter}/>
+            {filters}
         </div>
     )
 }

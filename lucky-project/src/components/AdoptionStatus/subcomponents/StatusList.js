@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../../styles/AdoptionStatus.scss';
 import { Link } from 'react-router-dom';
 
 export default function StatusList (props) {
-
-    const [id, setId] = useState();
 
     const animalsInAdoption = [];
     const animalsRejected = [];
@@ -22,18 +20,14 @@ export default function StatusList (props) {
         const city = capitilice(animal.city);
         const sex = capitilice(animal.sex);
 
-    const getId = () => {
-        setId(animal._id)
-    }
-
         if(animal.status === 'en adopcion'){
             animalsInAdoption.push(
-                <div key={i} className='status-animal-container' onClick={getId}>
+                <div key={i} className='status-animal-container'>
                     <Link to={`/perfil-animal/${animal._id}`}>
                     <div className='status-text-container'>
                         <h3>Adopción de {name}</h3>
 
-                            <p className='text-inadoption'>En proceso</p>
+                            <p className='text-inadoption'>En adopción</p>
                             <span className='circle-inadoption'/>
 
                     </div>
@@ -64,7 +58,7 @@ export default function StatusList (props) {
         } else {
         if(animal.status === 'en proceso'){
             animalsInProccess.push(
-                <div key={i} className='status-animal-container' onClick={getId}>
+                <div key={i} className='status-animal-container'>
                     <Link to={`/perfil-animal/${animal._id}`}>
                     <div className='status-text-container'>
                         <h3>Adopción de {name}</h3>
@@ -100,7 +94,7 @@ export default function StatusList (props) {
         } else {
             if(animal.status === 'rechazado'){
                 animalsRejected.push(
-                <div key={i} className='status-animal-container' onClick={getId}>
+                <div key={i} className='status-animal-container'>
                     <Link to={`/perfil-animal/${animal._id}`}>
                     <div className='status-text-container'>
                         <h3>Adopción de {name}</h3>
@@ -136,13 +130,36 @@ export default function StatusList (props) {
         }
     }
     }
-    console.log(id);
-    
-    return(
-        <div className='content'>
-            {animalsInAdoption}
-            {animalsInProccess}
-            {animalsRejected}
-        </div>
-    )
+
+    const filter = props.filter;
+
+    switch(filter){
+
+       default:
+            return(
+                <div className='content'>
+                    {animalsInAdoption}
+                    {animalsInProccess}
+                    {animalsRejected}
+                </div>
+            )
+        case 'en adopcion':
+            return(
+                <div className='content'>
+                    {animalsInAdoption}
+                </div>
+            ) 
+        case 'en proceso':
+            return(
+                <div className='content'>
+                    {animalsInProccess}
+                </div>
+            )  
+        case 'rechazado':
+            return(
+                <div className='content'>
+                    {animalsRejected}
+                </div>
+            )
+    }
 }

@@ -147,3 +147,127 @@
     -webkit-border-radius: 50%;
 }
 
+// Estilos FilterStatus
+
+.floating-container{
+    position: absolute;
+    z-index: 3;
+    background-color: #bdd2d6d3;
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+.filter-status-container{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 81.8%;
+    height: 30%;
+    background-color: white;
+    border-radius: 8pt;
+
+}
+.filter-status-container h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: $ocean;
+    text-align: center;
+    margin-top: 6.9%;
+}
+.icon-container-FS{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+    width: 85.6%;
+    height: 33.2%;
+}
+.completed-btn{
+    width: 20.5vw;
+    height: 20.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 8pt;
+    background-image: url(../assets/icons_svg/process_filters/completado.svg);
+}
+.completed-btn:focus{
+    width: 20.5vw;
+    height: 20.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 8pt;
+    background-image: url(../assets/icons_svg/process_filters/completado_checked.svg);
+
+    border: none;
+    outline: none;
+}
+.in_process-btn{
+    width: 20.5vw;
+    height: 20.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 8pt;
+    background-image: url(../assets/icons_svg/process_filters/en_proceso.svg);
+}
+.in_process-btn:focus{
+    width: 20.5vw;
+    height: 20.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 8pt;
+    background-image: url(../assets/icons_svg/process_filters/en_proceso_checked.svg);
+
+    border: none;
+    outline: none;
+}
+.rejected-btn{
+    width: 20.5vw;
+    height: 20.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 8pt;
+    background-image: url(../assets/icons_svg/process_filters/rechazado.svg);
+}
+.rejected-btn:focus{
+    width: 20.5vw;
+    height: 20.5vw;
+    background-color: white;
+    border: none;
+    border-radius: 8pt;
+    background-image: url(../assets/icons_svg/process_filters/rechazado_checked.svg);
+
+    border: none;
+    outline: none;
+}
+.apply-btn-FS{
+    width: 88.6%;
+    height: 17.2%;
+    background-color: $lightSalmon;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 4pt;
+    margin-bottom: 10%;
+}
+.btn-container-link{
+    
+}
+
+// Estilos de FilterResultsAs 
+
+.before-btn-FR{
+    margin-top: 5vh;
+    width: 100vw;
+    height: 10vh;
+}
+.before-btn-FR img {
+    margin-left: 8%;
+}

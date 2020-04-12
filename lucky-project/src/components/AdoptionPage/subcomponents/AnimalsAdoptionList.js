@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../../styles/AdoptionPage.scss';
 import { Link } from 'react-router-dom';
 
 export default function AnimalsAdoptionList (props) {
-
-    const[id, setId] = useState();
 
     function capitilice(word){
         if(typeof word !== 'string') return ''
@@ -19,7 +17,7 @@ export default function AnimalsAdoptionList (props) {
         const animalImage = `http://localhost:2020/${animal.image}`;
 
         animals.push(
-            <div key={i} className='animals-container' onClick={getId}>
+            <div key={i} className='animals-container'>
                 <Link to={`/perfil-animal/${animal._id}`}>
                 <div className='animal-profile'>
                     <div className='img-wrap'>
@@ -33,12 +31,7 @@ export default function AnimalsAdoptionList (props) {
                 </Link>   
         </div>
         )
-        function getId(){
-            setId(animal._id)
-        }
     };
-    console.log(id);
-
     return(
         <div className='content'>
             {animals}

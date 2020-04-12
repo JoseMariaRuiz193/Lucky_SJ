@@ -1,12 +1,5 @@
 import React from 'react';
-import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
-import { Icon } from 'leaflet';
-
-const icon = new Icon({
-  iconUrl: '../../../assets/icons_svg/map_icons/peluquerias.svg',
-  iconSize: [25,25]
-});
-
+import { Map, TileLayer } from 'react-leaflet';
 
 export default function MapSimple () {
 

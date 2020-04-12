@@ -14,7 +14,6 @@ export default function AnimalProfile () {
 
     const {id} = useParams();
 
-    
     const [advertisement, setadvertisement] = useState(false);
     const [animal, setAnimal] = useState({});
 
