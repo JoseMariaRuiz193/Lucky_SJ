@@ -102,7 +102,7 @@ var controller = {
             });
         });
     },
-    login: (req, res) => {
+    /*login: (req, res) => {
         var userEmail = req.params.email;
         try {
             var validate_email = !validator.isEmpty(params.email);
@@ -125,7 +125,7 @@ var controller = {
                 });
             });
         }
-    },
+    },*/
     update: (req, res) => {
         var userId = req.params.id;
         var params = req.body;
