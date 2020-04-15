@@ -44,6 +44,11 @@ export default function AdoptionStatus () {
         } 
     };
 
+    function closeApplyFilter (){
+        if(filters === false){
+            setFilters(false);
+        }
+    };
     const getCompleted = () => {
         setFilter('en adopcion')
     }
@@ -54,11 +59,6 @@ export default function AdoptionStatus () {
         setFilter('rechazado')
     };
 
-    function closeApplyFilter (){
-        if(filters === false){
-            setFilters(false);
-        }
-    };
 
     return(
         <div className='content'>

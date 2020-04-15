@@ -147,7 +147,7 @@ export default function Register() {
 
         <div className="input-container">
           <input
-            type="text"
+            type="password"
             className="data-form"
             name="password"
             id="password"
@@ -163,7 +163,7 @@ export default function Register() {
 
         <div className="input-container">
           <input
-            type="text"
+            type="password"
             className="data-form"
             id="password2"
             placeholder="Repita la contraseña"
