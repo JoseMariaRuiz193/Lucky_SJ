@@ -1,5 +1,5 @@
 
-var service = require ('../services');
+
 var validator = require('validator');
 var User = require('../Estructura/User');
 
@@ -49,7 +49,7 @@ var controller = {
         }
 
     },
-    signUp(req, res) {
+ /*   signUp(req, res) {
         const user = new User({
             username: req.body.username,
             name: req.body.name,
@@ -66,7 +66,7 @@ var controller = {
                 })
             return res.status(200).send({
                 token: service.createToken(user)
-            });       /*service es una funcion que ayuda a realizar acciones que repitas en el codigo */
+            });       /*service es una funcion que ayuda a realizar acciones que repitas en el codigo 
         });
     },
 
@@ -86,7 +86,7 @@ var controller = {
                 token: service.createToken(user)
             });
         });
-    },
+    },*/
     delete: (req, res) => {
         var userId = req.params.id;
 
@@ -102,30 +102,7 @@ var controller = {
             });
         });
     },
-    /*login: (req, res) => {
-        var userEmail = req.params.email;
-        try {
-            var validate_email = !validator.isEmpty(params.email);
-        } catch (error) {
-            return res.status(400).send({
-                status: 'error',
-                message: 'Faltan datos'
-            });
-        }
-        if (validate_email) {
-            User.find({ email: userEmail }, (err, user) => {
-                if (err || !user) {
-                    return res.status(404).send({
-                        status: 'error',
-                        message: 'Error al obtener usuario'
-                    });
-                }
-                return res.status(200).send({
-                    usuario: user
-                });
-            });
-        }
-    },*/
+ 
     update: (req, res) => {
         var userId = req.params.id;
         var params = req.body;
@@ -205,42 +182,6 @@ var controller = {
             });
         }
     }
-    /*  login: (req, res) => {
-          var params = req.body;
-          var userEmail = req.params.email;
-          var userPassword = req.params.password;
-          try {
-              var validate_email = !validator.isEmpty(params.email);
-              var validate_password = !validator.isEmpty(params.password);
-          } catch (error) {
-              return res.status(404).send({
-                  status: 'error',
-                  message: 'Faltan datos'
-              });
-          }
-          if (validate_email && validate_password) {
-              User.find({ email: userEmail }, { password: userPassword })
-                  .exec((err, user) => {
-                      if (err) {
-                          return res.status(404).send({
-                              status: 'error',
-                              message: 'Error en la peticion'
-                          });
-                      }
-                      if (!user || user.length <= 0) {
-                          return res.status(404).send({
-                              status: 'error',
-                              message: 'No estas registrado!!'
-                          });
-                      }
-                      return res.status(200).send({
-                          user
-                      });
-                  });
-              }
-          }
-      }*/
-
   
 }
 
