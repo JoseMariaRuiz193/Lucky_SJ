@@ -35,7 +35,7 @@ export default function Register() {
 
   const sendData = (event) => {
       event.preventDefault();
-      Axios.post(`` , {newUser})
+      Axios.post(`http://localhost:2020/lucky-db/save`, {newUser})
         .then( res => {
             console.log('Usuario registrado correctamente');
         }).catch(err => {

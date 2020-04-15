@@ -5,14 +5,15 @@ import logoLucky from "../../../assets/img/register/logo.svg";
 import check from "../../../assets/img/register/checkmark.svg";
 import ojo from "../../../assets/icons_svg/ojo.svg";
 import Axios from "axios";
+import { UserProvider } from "../../Context/UserContext";
 
 export default function Login() {
 
   const [user, setUser] = useState({
-    name:'',
-    password:''
+    name:'default',
+    password:'default',
   })
-
+  
   const getUser = (event) => {
     setUser({
       ...user,
@@ -20,24 +21,8 @@ export default function Login() {
       [event.target.name] : event.target.value
     })
   }
-/** 
-  const validateUser = (event) => {
-    event.preventDefault();
-    console.log('Procesando autentificación');
-    Axios.post('' , {user})
-      .then(res => {
-        if(res.status === 200) {
-          history.push('/')
-        } else {
-          const error = new Error(res.error);
-          throw error;
-        }
-      }).catch(err => {
-        console.log('Error al iniciar sesión, porfavor intentelo de nuevo más tarde')
-      })
-  }
-*/
   return (
+    <UserProvider value={{user}}>
     <div className="content">
 
       <div className="logo-container">
@@ -76,5 +61,6 @@ export default function Login() {
 
 
     </div>
+    </UserProvider>
   );
 }

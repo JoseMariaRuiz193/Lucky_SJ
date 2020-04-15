@@ -24,6 +24,7 @@ export default function Home () {
 
       <div>
         <HomeTitle/>
+        
         <Slider {...settings}>
 
           <div>

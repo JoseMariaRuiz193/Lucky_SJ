@@ -64,3 +64,73 @@ h3{
 
 /* Medidas Otros móviles */
 
+// Móviles grandes
+
+@media (min-width: 400px) and (max-width: 800px)
+{
+  .App{
+    box-sizing: border-box;
+    height:700px;
+    width: 400px;
+    padding: 0px;
+    margin: 0px;
+    font-family:  'Barlow', sans-serif;
+  }
+}
+
+
+// Galaxy S5
+
+@media (max-width: 360px)
+{
+  .App{
+    box-sizing: border-box;
+    height: 640px;
+    width: 360px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+// Iphone 5/SE
+
+@media (max-width: 320px)
+{
+  .App{
+    box-sizing: border-box;
+    height: 568px;
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+}
+}
+
+// Ipad y tablets
+
+@media (min-width: 768px) and (max-width: 1000px)
+{
+  .App{
+    box-sizing: border-box;
+    height: 1024px;
+    width: 768px;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+  font-size: 16px;
+}
+}
+
+@media(min-width: 1010px) and (max-width: 1400px)
+{
+  .App{
+    box-sizing: border-box;
+    height: 1366px;
+    width: 1024px;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+  font-size: 25px;
+}
+}

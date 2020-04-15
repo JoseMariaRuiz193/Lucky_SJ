@@ -26,8 +26,6 @@ export default function Routes (){
     <BrowserRouter>
     
         <Switch>
-            {/* <Route exact path = '/' component={WelcomePage}/> */}
-
             {/** Rutas MENÚ */}
 
             <Route exact path = '/' component={WelcomePage}/>

@@ -11,7 +11,7 @@ import apdrina from '../../../assets/icons_svg/apadrina.svg';
 import donar from '../../../assets/icons_svg/donar.svg';
 import adelante from '../../../assets/icons_svg/adelante.svg';
 
-export default function ProfileData () {
+export default function UserStartedProfile () {
 
     return(
         
