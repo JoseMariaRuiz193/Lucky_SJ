@@ -37,7 +37,7 @@ export default function Home () {
 
           <div>
           <div className='slide-container'>
-          <Link to='/estado-adopcion' className='slide-container'>
+          <Link to='/adopcion' className='slide-container'>
             <img className='slide-animal' src={slideApadrina} alt='slider de animal'/>
           </Link>
           </div>
