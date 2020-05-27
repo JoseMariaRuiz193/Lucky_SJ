@@ -22,7 +22,7 @@ Proyecto Lucky de Sergio y Jose
 
     npm start
 
-# Después iniciar el Back End en NODEE JS entrando en la carpeta Lucky y ejecutando el comando:
+# Después iniciar el Back End en NODE JS entrando en la carpeta Lucky y ejecutando el comando:
 
     npm start
 
